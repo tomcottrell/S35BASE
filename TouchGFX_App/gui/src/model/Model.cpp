@@ -69,7 +69,6 @@ Model::Model() : modelListener(0), currentLayer1Selection(0), currentLayer2Selec
                  lastButtonPressed(0), buttonFeedbackActive(false), buttonFeedbackTimer(0)
 {
     initializeMenuData();
-    initializeSystemState();
 }
 
 void Model::initializeMenuData()
@@ -122,14 +121,6 @@ void Model::tick()
         settingsLoaded = true;
     }
 
-    processTruckStatus();
-    processTrailerStatus();
-    processErrorConditions();
-    updateAlarmState();
-    updateFlashingStates();
-    processRollData();
-    processPTOStatus();
-
     //if(buttonFeedbackActive)
     //{
     //    if(HAL_GetTick() - buttonFeedbackTimer > 3000)
@@ -137,139 +128,13 @@ void Model::tick()
     //        buttonFeedbackActive = false;
     //        stateChanged = true;
      //   }
-    //}
-
-    notifyStateChanged();
+    //
 }
 
 // UPDATED: Removed PTO_DISABLED, added OVERPRESSURE alarm
 
 
-bool Model::isAlarmActive() const
-{
-    return alarmActive;
-}
-
-// UPDATED: Larger buffers and new alarm types
-const char* Model::getAlarmTitle() const
-{
-    switch(currentErrorState)
-    {
-        case ERROR_ESTOP_ACTIVE:
-            return "EMERGENCY STOP ACTIVATED";
-        case ERROR_ANGLE_EXCEEDED:
-            return "VEHICLE ANGLE EXCEEDED";
-        case ERROR_OVERPRESSURE:  // NEW
-            return "PTO OVERPRESSURE ALARM";
-        default:
-            return "";
-    }
-}
-
-const char* Model::getAlarmDescription() const
-{
-	switch(currentErrorState)
-	{
-	case ERROR_ESTOP_ACTIVE:
-		return "E-Stop button has been activated.\n All functionality disabled \n Clear the emergency condition";
-	case ERROR_ANGLE_EXCEEDED:
-		return "Vehicle operating angle exceeded. \n Lower Tray and Level the vehicle \n before attempting to raise";
-	case ERROR_OVERPRESSURE: // NEW
-		return "PTO hydraulic pressure has exceeded\n the maximum safe operating threshold.\n Raise disabled";
-	default:
-		return "";
-	}
-}
-
-void Model::processTruckStatus()
-{
-    TruckState newState = TRUCK_STATE_UNKNOWN;
-
-    if(j1939Truck_Latched == 1)
-    {
-        newState = TRUCK_STATE_LATCHED;
-    }
-    else if(j1939Truck_Lowered == 1)
-    {
-        newState = TRUCK_STATE_LOWERED;
-    }
-    else if(j1939Truck_Moving == 1)
-    {
-        newState = TRUCK_STATE_MOVING;
-    }
-    else if(j1939Truck_Raised == 1)
-    {
-        newState = TRUCK_STATE_RAISED;
-    }
-    else
-    {
-        newState = TRUCK_STATE_UNKNOWN;
-    }
-
-    if (currentTruckState != newState)
-    {
-        currentTruckState = newState;
-        stateChanged = true;
-    }
-}
-
-void Model::processTrailerStatus()
-{
-    TrailerState newState = TRAILER_STATE_UNKNOWN;
-
-    if(j1939Trailer_Latched == 1)
-    {
-        newState = TRAILER_STATE_LATCHED;
-    }
-    else if(j1939Trailer_Lowered == 1)
-    {
-        newState = TRAILER_STATE_LOWERED;
-    }
-    else if(j1939Trailer_Moving == 1)
-    {
-        newState = TRAILER_STATE_MOVING;
-    }
-    else if(j1939Trailer_Raised == 1)
-    {
-        newState = TRAILER_STATE_RAISED;
-    }
-    else
-    {
-        newState = TRAILER_STATE_UNKNOWN;
-    }
-
-    if (currentTrailerState != newState)
-    {
-        currentTrailerState = newState;
-        stateChanged = true;
-    }
-}
-
 // UPDATED: Removed PTO_DISABLED check, added OVERPRESSURE check
-void Model::processErrorConditions()
-{
-    ErrorState newErrorState = ERROR_NONE;
-
-    // Check for error conditions (priority order)
-    if(j1939EStop_Active == 1)
-    {
-        newErrorState = ERROR_ESTOP_ACTIVE;
-    }
-    else if(j1939Angle_Exceeded == 1)
-    {
-        newErrorState = ERROR_ANGLE_EXCEEDED;
-    }
-    else if(j1939Overpressure == 1)  // NEW: Added overpressure check
-    {
-        newErrorState = ERROR_OVERPRESSURE;
-    }
-
-    if (currentErrorState != newErrorState)
-    {
-        currentErrorState = newErrorState;
-        stateChanged = true;
-    }
-}
 
 void Model::updateFlashingStates()
 {
@@ -287,171 +152,10 @@ void Model::updateFlashingStates()
     }
 }
 
-void Model::processRollData()
-{
-    if(j1939Roll != 0xFFFF)
-    {
-        int16_t newRollValue = j1939Roll - 64;
-
-        if (abs(newRollValue - rollValue) > 1 || !rollValid)
-        {
-            rollValue = newRollValue;
-            rollValid = true;
-            stateChanged = true;
-        }
-    }
-    else
-    {
-        if (rollValid)
-        {
-            rollValue = 0;
-            rollValid = false;
-            stateChanged = true;
-        }
-    }
-}
-
-void Model::processPTOStatus()
-{
-    if(j1939PTOStatus != 0xFFFF)
-    {
-        ptoActive = (j1939PTOStatus > 0);
-        ptoValid = true;
-    }
-    else
-    {
-        ptoActive = false;
-        ptoValid = false;
-    }
-}
-
-void Model::notifyStateChanged()
-{
-    if (stateChanged && modelListener)
-    {
-        modelListener->systemStateChanged();
-        stateChanged = false;
-    }
-}
-
-// Getters for UI
-Model::TruckState Model::getTruckState() const
-{
-    return currentTruckState;
-}
-
-Model::ErrorState Model::getErrorState() const
-{
-    return currentErrorState;
-}
-
-Model::TrailerState Model::getTrailerState() const
-{
-    return currentTrailerState;
-}
 
 bool Model::getFlashState() const
 {
     return flashState;
-}
-
-int16_t Model::getRollValue() const
-{
-    return rollValue;
-}
-
-bool Model::isRollValid() const
-{
-    return rollValid;
-}
-
-bool Model::isPTOActive() const
-{
-    return ptoActive;
-}
-
-bool Model::isPTOValid() const
-{
-    return ptoValid;
-}
-
-uint16_t Model::getTruckPressure() const
-{
-    return j1939Truck_Press;
-}
-
-uint16_t Model::getTrailerPressure() const
-{
-    return j1939Trailer_Press;
-}
-
-const char* Model::getErrorMessage() const
-{
-    static const char* errorMessages[] = {
-        "",                    // ERROR_NONE
-        "ESTOP ACTIVE",       // ERROR_ESTOP_ACTIVE
-        "ANGLE EXCEEDED",     // ERROR_ANGLE_EXCEEDED
-        "OVERPRESSURE",       // ERROR_OVERPRESSURE (NEW)
-        "MOVING"              // ERROR_MOVING
-    };
-
-    if (currentErrorState < sizeof(errorMessages)/sizeof(errorMessages[0]))
-    {
-        return errorMessages[currentErrorState];
-    }
-    return "";
-}
-
-//const char* Model::getTruckStateMessage() const
-//{
-//    switch(currentTruckState)
-//    {
-//        case TRUCK_STATE_LATCHED: return "LATCHED";
-//        case TRUCK_STATE_LOWERED: return "UNLATCHED";
-//        case TRUCK_STATE_MOVING: return "ACTIVE";
-//        case TRUCK_STATE_RAISED: return "";
-//        case TRUCK_STATE_UNKNOWN: return "";
-//        default: return "";
-//    }
-//}
-
-const char* Model::getTrailerStateMessage() const
-{
-    switch(currentTrailerState)
-    {
-        case TRAILER_STATE_LATCHED: return "LATCHED";
-        case TRAILER_STATE_LOWERED: return "UNLATCHED";
-        case TRAILER_STATE_MOVING: return "";
-        case TRAILER_STATE_RAISED: return "";
-        case TRAILER_STATE_UNKNOWN: return "";
-        default: return "";
-    }
-}
-
-uint16_t Model::getTruckStateBitmapId() const
-{
-    switch(currentTruckState)
-    {
-        case TRUCK_STATE_LATCHED: return BITMAP_TRUCKLATCHED_ID;
-        case TRUCK_STATE_LOWERED: return BITMAP_TRUCKUNLATCHED_ID;
-        case TRUCK_STATE_MOVING: return BITMAP_TRUCKRAISED_ID;
-        case TRUCK_STATE_RAISED: return BITMAP_TRUCKRAISED_ID;
-        case TRUCK_STATE_UNKNOWN: return BITMAP_TRUCKUNLATCHED_ID;
-        default: return BITMAP_TRUCKUNLATCHED_ID;
-    }
-}
-
-uint16_t Model::getTrailerStateBitmapId() const
-{
-    switch(currentTrailerState)
-    {
-        case TRAILER_STATE_LATCHED: return BITMAP_TRAILERLATCHED_ID;
-        case TRAILER_STATE_LOWERED: return BITMAP_TRAILERUNLATCHED_ID;
-        case TRAILER_STATE_MOVING: return BITMAP_TRAILERRAISED_ID;
-        case TRAILER_STATE_RAISED: return BITMAP_TRAILERRAISED_ID;
-        case TRAILER_STATE_UNKNOWN: return BITMAP_TRAILERUNLATCHED_ID;
-        default: return BITMAP_TRAILERUNLATCHED_ID;
-    }
 }
 
 // UPDATED: Removed emergency setpoint mappings

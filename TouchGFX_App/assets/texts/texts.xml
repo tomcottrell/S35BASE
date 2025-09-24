@@ -193,42 +193,6 @@
       <Text Id="__SingleUse_RFEJ" Alignment="Center" TypographyId="Gemunu_20">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_IB5N" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">---</Translation>
-      </Text>
-      <Text Id="__SingleUse_1YE5" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Lcd brightness: &lt;value&gt;%</Translation>
-      </Text>
-      <Text Id="__SingleUse_UVSW" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_VYTM" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">+</Translation>
-      </Text>
-      <Text Id="__SingleUse_G03W" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">EXIT</Translation>
-      </Text>
-      <Text Id="__SingleUse_AW8J" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Out 2</Translation>
-      </Text>
-      <Text Id="__SingleUse_PT8Q" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Out 1</Translation>
-      </Text>
-      <Text Id="__SingleUse_OPD1" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_IT8S" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Output #2: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_VLRX" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_5PB5" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Output #1: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_T00Q" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">EXIT</Translation>
-      </Text>
       <Text Id="tx_count" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">789</Translation>
       </Text>
