@@ -55,44 +55,7 @@ void ScreenTestHomeView::initializeLatchDisplay()
     LATCHBuffer[LATCH_SIZE - 1] = 0;
 }
 
-void ScreenTestHomeView::initializeAlarmDisplay()
-{
-    // Get current alarm state from model
-    Model& model = static_cast<FrontendApplication*>(&application())->getModel();
-    bool currentAlarmState = model.isAlarmActive();
 
-    if(currentAlarmState)
-    {
-        // Alarm is active - show the popup
-        Alarmpopup.setVisible(true);
-        ALARM.setVisible(true);
-
-        // Update alarm title and description
-        const char* title = model.getAlarmTitle();
-        const char* description = model.getAlarmDescription();
-
-        if (title && strlen(title) > 0) {
-            Unicode::strncpy(AlarmtitletextBuffer, title, ALARMTITLETEXT_SIZE - 1);
-            AlarmtitletextBuffer[ALARMTITLETEXT_SIZE - 1] = 0;
-        }
-
-        if (description && strlen(description) > 0) {
-            Unicode::strncpy(AlarmdesctextBuffer, description, ALARMDESCTEXT_SIZE - 1);
-            AlarmdesctextBuffer[ALARMDESCTEXT_SIZE - 1] = 0;
-        }
-
-        Alarmtitletext.setVisible(true);
-        Alarmdesctext.setVisible(true);
-    }
-    else
-    {
-        // No alarm - hide all alarm elements
-        Alarmpopup.setVisible(false);
-        Alarmtitletext.setVisible(false);
-        Alarmdesctext.setVisible(false);
-        ALARM.setVisible(false);
-    }
-}
 
 
 void ScreenTestHomeView::tearDownScreen()
@@ -145,116 +108,11 @@ void ScreenTestHomeView::forceUpdateTruckStatusDisplay(const Model& model)
     }
 
     // Apply state immediately
-    statusImage.setBitmap(Bitmap(newBitmapId));
     previousBitmapId = newBitmapId;
 
-    UNLOCKED.setVisible(showUnlocked);
-    LOCKED.setVisible(showLocked);
-    MOVING.setVisible(showMoving);
 }
 
-void ScreenTestHomeView::forceUpdateRollDisplay(const Model& model)
-{
-    if(model.isRollValid())
-    {
-        int16_t rollValue = model.getRollValue();
-        Unicode::snprintf(textRollBuffer, TEXTROLL_SIZE, "%d", rollValue);
 
-        if(rollValue > 0)
-        {
-            imageProgressRollPos.setValue(rollValue + 64);
-            imageProgressRollNeg.setValue(64);
-        }
-        else if(rollValue < 0)
-
-        {
-            imageProgressRollPos.setValue(64);
-            imageProgressRollNeg.setValue(abs(rollValue) + 64);
-        }
-        else
-        {
-            imageProgressRollPos.setValue(64);
-            imageProgressRollNeg.setValue(64);
-        }
-    }
-    else
-    {
-        Unicode::snprintf(textRollBuffer, TEXTROLL_SIZE, "----");
-        imageProgressRollPos.setValue(64);
-        imageProgressRollNeg.setValue(64);
-    }
-}
-
-bool ScreenTestHomeView::updateRollDisplay(const Model& model)
-{
-    bool changed = false;
-    static int16_t lastRollValue = 999;  // Invalid initial value
-    static bool lastRollValid = false;
-
-    if(model.isRollValid())
-    {
-        int16_t rollValue = model.getRollValue();
-        if (rollValue != lastRollValue || !lastRollValid)
-        {
-            Unicode::snprintf(textRollBuffer, TEXTROLL_SIZE, "%d", rollValue);
-
-            if(rollValue > 0)
-            {
-                imageProgressRollPos.setValue(rollValue + 64);
-                imageProgressRollNeg.setValue(64);
-            }
-            else if(rollValue < 0)
-            {
-                imageProgressRollPos.setValue(64);
-                imageProgressRollNeg.setValue(abs(rollValue) + 64);
-            }
-            else
-            {
-                imageProgressRollPos.setValue(64);
-                imageProgressRollNeg.setValue(64);
-            }
-
-            lastRollValue = rollValue;
-            lastRollValid = true;
-            changed = true;
-        }
-    }
-    else if (lastRollValid)  // Only update if state changed from valid to invalid
-    {
-        Unicode::snprintf(textRollBuffer, TEXTROLL_SIZE, "----");
-        imageProgressRollPos.setValue(64);
-        imageProgressRollNeg.setValue(64);
-        lastRollValid = false;
-        changed = true;
-    }
-
-    return changed;
-}
-
-void ScreenTestHomeView::forceUpdatePTODisplay(const Model& model)
-{
-    if(model.isPTOValid())
-    {
-        if(model.isPTOActive())
-        {
-            PTOStatusON.setVisible(true);
-            PTOStatusOFF.setVisible(false);
-            Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO ON", PTOSTATUSTXT_SIZE);
-        }
-        else
-        {
-            PTOStatusON.setVisible(false);
-            PTOStatusOFF.setVisible(true);
-            Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO OFF", PTOSTATUSTXT_SIZE);
-        }
-    }
-    else
-    {
-        PTOStatusON.setVisible(false);
-        PTOStatusOFF.setVisible(true);
-        Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO ---", PTOSTATUSTXT_SIZE);
-    }
-}
 
 /*
  * Virtual Action Handlers
@@ -401,7 +259,6 @@ bool ScreenTestHomeView::updateTruckStatusDisplay(const Model& model)
     // Update bitmap if changed
     if(newBitmapId != previousBitmapId)
     {
-        statusImage.setBitmap(Bitmap(newBitmapId));
         statusImage.invalidate();
         previousBitmapId = newBitmapId;
         changed = true;
@@ -409,8 +266,6 @@ bool ScreenTestHomeView::updateTruckStatusDisplay(const Model& model)
 
     // Check if visibility states changed
     bool currentUnlocked = UNLOCKED.isVisible();
-    bool currentLocked = LOCKED.isVisible();
-    bool currentMoving = MOVING.isVisible();
 
     if (currentUnlocked != showUnlocked ||
         currentLocked != showLocked ||
@@ -427,68 +282,6 @@ bool ScreenTestHomeView::updateTruckStatusDisplay(const Model& model)
     return changed;
 }
 
-bool ScreenTestHomeView::updatePTODisplay(const Model& model)
-{
-    bool changed = false;
-    static bool lastPTOActive = false;
-    static bool lastPTOValid = false;
-    static bool firstRun = true;
-
-    if(model.isPTOValid())
-    {
-        bool currentPTOActive = model.isPTOActive();
-
-        // Check if PTO state changed or if this is the first run
-        if (currentPTOActive != lastPTOActive || !lastPTOValid || firstRun)
-        {
-            if(currentPTOActive)
-            {
-                PTOStatusON.setVisible(true);
-                PTOStatusOFF.setVisible(false);
-                Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO ON", PTOSTATUSTXT_SIZE);
-            }
-            else
-            {
-                PTOStatusON.setVisible(false);
-                PTOStatusOFF.setVisible(true);
-                Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO OFF", PTOSTATUSTXT_SIZE);
-            }
-
-            lastPTOActive = currentPTOActive;
-            lastPTOValid = true;
-            changed = true;
-        }
-    }
-    else // PTO data invalid
-    {
-        // Only update if state changed from valid to invalid
-        if (lastPTOValid || firstRun)
-        {
-            PTOStatusON.setVisible(false);
-            PTOStatusOFF.setVisible(true);
-            Unicode::strncpy(PTOSTATUSTXTBuffer, "PTO ---", PTOSTATUSTXT_SIZE);
-
-            lastPTOValid = false;
-            changed = true;
-        }
-    }
-
-    firstRun = false;
-    return changed;
-}
-
-void ScreenTestHomeView::navigateBasedOnVehicleType()
-{
-    // Check vehicle type from configuration
-    // 0 = "Truck", 1 = "Truck/Trailer" (based on TypeModeOptions array in Model.cpp)
-    if (S35_config[TOUCHGFX_VEHICLETYPE] == 1) {
-        // Truck/Trailer mode - go to ScreenTrailer
-        application().gotoScreenTrailerScreenNoTransition();
-    } else {
-        // Truck only mode - go to Diagnostic Page
-        application().gotoDiagnosticScreenNoTransition();
-    }
-}
 
 bool ScreenTestHomeView::updateButtonFeedbackDisplay(Model& model)
 {
@@ -552,57 +345,6 @@ bool ScreenTestHomeView::updateButtonFeedbackDisplay(Model& model)
     return changed;
 }
 
-bool ScreenTestHomeView::updateAlarmDisplay(Model& model)
-{
-    bool changed = false;
-    static bool lastAlarmState = false;
-    static Model::ErrorState lastErrorState = Model::ERROR_NONE;
-
-    bool currentAlarmState = model.isAlarmActive();
-    Model::ErrorState currentErrorState = model.getErrorState();
-
-    // Check if alarm state changed
-    if(currentAlarmState != lastAlarmState || currentErrorState != lastErrorState)
-    {
-        // Update alarm popup visibility
-        Alarmpopup.setVisible(currentAlarmState);
-        ALARM.setVisible(currentAlarmState);  // ALARM image follows popup state
-
-        if(currentAlarmState)
-        {
-            // Update alarm title and description using TouchGFX Unicode functions
-            const char* title = model.getAlarmTitle();
-            const char* description = model.getAlarmDescription();
-
-            // Copy title using Unicode::strncpy
-            if (title && strlen(title) > 0) {
-                Unicode::strncpy(AlarmtitletextBuffer, title, ALARMTITLETEXT_SIZE - 1);
-                AlarmtitletextBuffer[ALARMTITLETEXT_SIZE - 1] = 0; // Ensure null termination
-            }
-
-            // Copy description using Unicode::strncpy
-            if (description && strlen(description) > 0) {
-                Unicode::strncpy(AlarmdesctextBuffer, description, ALARMDESCTEXT_SIZE - 1);
-                AlarmdesctextBuffer[ALARMDESCTEXT_SIZE - 1] = 0; // Ensure null termination
-            }
-
-            Alarmtitletext.setVisible(true);
-            Alarmdesctext.setVisible(true);
-        }
-        else
-        {
-            // Hide alarm text elements when no alarm
-            Alarmtitletext.setVisible(false);
-            Alarmdesctext.setVisible(false);
-        }
-
-        lastAlarmState = currentAlarmState;
-        lastErrorState = currentErrorState;
-        changed = true;
-    }
-
-    return changed;
-}
 
 bool ScreenTestHomeView::updateLatchDisplay()
 {
