@@ -110,7 +110,7 @@ void PasswordEntryView::validatePassword()
 
         if (attempts >= 3) {
             // Too many attempts - return to home
-            application().gotoHomeScreen();
+            //application().gotoHomeScreen();
         } else {
             // Reset and try again
             resetPasswordEntry();

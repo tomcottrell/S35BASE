@@ -2,295 +2,6 @@
   "Application": {
     "Screens": [
       {
-        "Name": "ScreenTestHome",
-        "Components": [
-          {
-            "Type": "TextArea",
-            "Name": "textVersion",
-            "X": 10,
-            "Y": 178,
-            "Width": 300,
-            "Height": 24,
-            "TextId": "__SingleUse_DDD1",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_8HN7",
-              "UseBuffer": true,
-              "BufferSize": 24
-            }
-          },
-          {
-            "Type": "Image",
-            "Name": "test_1",
-            "X": -1,
-            "Width": 320,
-            "Height": 240,
-            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button3",
-            "X": 240,
-            "Y": 216,
-            "Width": 80,
-            "Height": 24,
-            "Pressed": "Button_grey.png",
-            "Released": "Button_grey.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button2",
-            "X": 160,
-            "Y": 216,
-            "Width": 80,
-            "Height": 24,
-            "Pressed": "Button_grey.png",
-            "Released": "Button_grey.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button0",
-            "Y": 216,
-            "Width": 80,
-            "Height": 24,
-            "Pressed": "Button_grey.png",
-            "Released": "Button_grey.png"
-          },
-          {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 80,
-            "Y": 216,
-            "Width": 80,
-            "Height": 24,
-            "Pressed": "Button_grey.png",
-            "Released": "Button_grey.png"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea3",
-            "X": 174,
-            "Y": 215,
-            "Width": 53,
-            "Height": 22,
-            "TextId": "__SingleUse_8D9K",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "LATCH",
-            "X": 240,
-            "Y": 215,
-            "Width": 80,
-            "Height": 23,
-            "TextId": "__SingleUse_LLVS",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_TBV7",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2",
-            "X": 99,
-            "Y": 215,
-            "Width": 43,
-            "Height": 22,
-            "TextId": "__SingleUse_Z8CI",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea5",
-            "X": 10,
-            "Y": 23,
-            "Height": 22,
-            "TextId": "__SingleUse_1Y1W",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "Box",
-            "Name": "box6",
-            "Width": 320,
-            "Height": 23
-          },
-          {
-            "Type": "TextArea",
-            "Name": "testtext",
-            "X": 24,
-            "Y": -1,
-            "Width": 215,
-            "Height": 24,
-            "TextId": "__SingleUse_DG0F",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 250,
-              "Green": 250,
-              "Blue": 250
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_ZLUT",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "UNLOCKED",
-            "X": 288,
-            "Y": 142,
-            "Width": 24,
-            "Height": 24,
-            "Visible": false,
-            "Filename": "__generated\\icon_theme_images_action_lock_open_48_44_0AA34A.svg.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "next",
-            "X": 20,
-            "Y": 215,
-            "Width": 37,
-            "Height": 27,
-            "Filename": "__generated\\icon_theme_images_navigation_east_50_50_000000.svg.png",
-            "ScalingAlgorithm": "Nearest-neighbor"
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "handle_button_press_0",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 4
-            },
-            "Action": {
-              "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
-              "ParameterValue": "0",
-              "ActionComponent": "ScreenTestHome"
-            }
-          },
-          {
-            "InteractionName": "handle_button_press_1",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 1
-            },
-            "Action": {
-              "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
-              "ParameterValue": "1",
-              "ActionComponent": "ScreenTestHome"
-            }
-          },
-          {
-            "InteractionName": "handle_button_press_2",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 2
-            },
-            "Action": {
-              "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
-              "ParameterValue": "2",
-              "ActionComponent": "ScreenTestHome"
-            }
-          },
-          {
-            "InteractionName": "Go_to_Outputs_screen",
-            "Trigger": {
-              "Type": "TriggerWhen",
-              "ActionCustomTypeName": "Call ScreenTestHome GoToOutputsTestScreen"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenOutputsTest"
-            }
-          },
-          {
-            "InteractionName": "Go_to_Home_screen",
-            "Trigger": {
-              "Type": "TriggerWhen",
-              "ActionCustomTypeName": "Call ScreenTestHome GoToHomeScreen"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenTestHome"
-            }
-          },
-          {
-            "InteractionName": "Go_to_LCD_screen",
-            "Trigger": {
-              "Type": "TriggerWhen",
-              "ActionCustomTypeName": "Call ScreenTestHome GoToLCDtestScreen"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenLCDtest"
-            }
-          },
-          {
-            "InteractionName": "handle_button_press_3",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 3
-            },
-            "Action": {
-              "Type": "ActionCustom2",
-              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
-              "ParameterValue": "3",
-              "ActionComponent": "ScreenTestHome"
-            }
-          },
-          {
-            "InteractionName": "NEXTPAGE",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "navigateBasedOnVehicleType"
-            }
-          }
-        ],
-        "CustomActions": [
-          {
-            "Name": "buttonHandler",
-            "Description": "calls a button handler",
-            "HasValue": true,
-            "ValueType": "uint8_t"
-          },
-          {
-            "Name": "GoToCANtestScreen",
-            "Description": "Change to CAN screen"
-          },
-          {
-            "Name": "GoToOutputsTestScreen",
-            "Description": "Change to outputs screen"
-          },
-          {
-            "Name": "GoToInputsTestScreen",
-            "Description": "Change to inputs screen"
-          },
-          {
-            "Name": "GoToHomeScreen",
-            "Description": "Change to home screen"
-          },
-          {
-            "Name": "GoToLCDtestScreen",
-            "Description": "Change to LCD test screen"
-          }
-        ]
-      },
-      {
         "Name": "ScreenOutputsTest",
         "Components": [
           {
@@ -760,7 +471,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenTestHome"
+              "ActionComponent": "Diagnostic"
             }
           },
           {
@@ -1639,7 +1350,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenTestHome"
+              "ActionComponent": "Diagnostic"
             }
           },
           {
@@ -1908,7 +1619,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenTestHome"
+              "ActionComponent": "Diagnostic"
             }
           },
           {
@@ -1945,6 +1656,11 @@
             }
           }
         ]
+      },
+      {
+        "Name": "Screen1",
+        "Components": [],
+        "Interactions": []
       }
     ],
     "CustomContainerDefinitions": [
@@ -2093,7 +1809,7 @@
       "Height": 240
     },
     "SelectedColorDepth": 24,
-    "StartupScreenName": "ScreenTestHome",
+    "StartupScreenName": "MenuLayer1",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "touchgfx",
     "UIPath": ".",

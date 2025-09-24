@@ -193,21 +193,6 @@
       <Text Id="__SingleUse_RFEJ" Alignment="Center" TypographyId="Gemunu_20">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_TBV7" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">OPEN</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZLUT" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB"></Translation>
-      </Text>
-      <Text Id="__SingleUse_DG0F" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_1Y1W" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB"></Translation>
-      </Text>
-      <Text Id="__SingleUse_LLVS" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
       <Text Id="__SingleUse_IB5N" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">---</Translation>
       </Text>
@@ -222,12 +207,6 @@
       </Text>
       <Text Id="__SingleUse_G03W" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">EXIT</Translation>
-      </Text>
-      <Text Id="__SingleUse_8HN7" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Base project V1.00.00</Translation>
-      </Text>
-      <Text Id="__SingleUse_8D9K" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">LOWER</Translation>
       </Text>
       <Text Id="__SingleUse_AW8J" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">Out 2</Translation>
@@ -255,12 +234,6 @@
       </Text>
       <Text Id="gauge_value1" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">----</Translation>
-      </Text>
-      <Text Id="__SingleUse_DDD1" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_Z8CI" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">RAISE</Translation>
       </Text>
       <Text Id="__SingleUse_RD3O" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">Your Text</Translation>

@@ -33,7 +33,7 @@ void ScreenOutputsTestView::buttonHandler( uint8_t value ) {
   	  {
       case 0:
     	  //button 0: Exit
-    	  application().gotoScreenTestHomeScreenNoTransition();
+    	  //application().gotoScreenTestHomeScreenNoTransition();
     	  break;
       case 1:
     	  //button 1: Toggle output 1 on/off

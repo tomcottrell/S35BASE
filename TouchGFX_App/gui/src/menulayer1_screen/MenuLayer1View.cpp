@@ -39,7 +39,7 @@ void MenuLayer1View::buttonHandler( uint8_t value ) {
   	  {
       case 0:
     	  //button 0: Exit to home screen
-    	  application().gotoScreenTestHomeScreenNoTransition();
+    	  //application().gotoScreenTestHomeScreenNoTransition();
     	  break;
       case 1:
     	  //button 1
@@ -129,5 +129,5 @@ void MenuLayer1View::handleEnterButton()
 
 void MenuLayer1View::handleHomeButton()
 {
-    static_cast<FrontendApplication*>(Application::getInstance())->gotoHomeScreen();
+    //static_cast<FrontendApplication*>(Application::getInstance())->gotoHomeScreen();
 }

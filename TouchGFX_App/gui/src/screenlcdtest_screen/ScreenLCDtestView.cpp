@@ -33,7 +33,7 @@ void ScreenLCDtestView::buttonHandler( uint8_t value ) {
     		  //Button 0: Goto home screen
     		  if(LCD_brightness == 0)
     			  LCD_brightness = 1;
-    		  application().gotoScreenTestHomeScreenNoTransition();
+    		  //application().gotoScreenTestHomeScreenNoTransition();
     		  break;
     	  case 1:
     		  //Button 1: Increase LCD brightness (single press)

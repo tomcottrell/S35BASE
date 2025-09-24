@@ -17,7 +17,7 @@ public:
     Model& getModel() { return model; }
 
     // Add these navigation methods
-    void gotoHomeScreen() { gotoScreenTestHomeScreenNoTransition(); } // Replace 'MainScreen' with your actual home screen name
+    //void gotoHomeScreen() { gotoScreenTestHomeScreenNoTransition(); } // Replace 'MainScreen' with your actual home screen name
     void gotoMenuLayer1Screen() { gotoMenuLayer1ScreenNoTransition(); }
     void gotoMenuLayer2Screen() { gotoMenuLayer2ScreenNoTransition(); }
     void gotoMenuLayer3Screen() { gotoMenuLayer3ScreenNoTransition(); }
