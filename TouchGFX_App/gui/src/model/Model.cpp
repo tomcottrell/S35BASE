@@ -31,15 +31,6 @@ extern volatile uint8_t can_data_updated;
 // HAL function for timing
 extern "C" uint32_t HAL_GetTick(void);
 
-// Bitmap IDs
-extern const uint16_t BITMAP_TRUCKLATCHED_ID;
-extern const uint16_t BITMAP_TRUCKUNLATCHED_ID;
-extern const uint16_t BITMAP_TRUCKRAISED_ID;
-
-extern const uint16_t BITMAP_TRAILERLATCHED_ID;
-extern const uint16_t BITMAP_TRAILERUNLATCHED_ID;
-extern const uint16_t BITMAP_TRAILERRAISED_ID;
-
 // Define enum options
 static const char* TypeModeOptions[] = {"Truck", "Truck and Trailer"};
 
@@ -89,21 +80,6 @@ void Model::initializeMenuData()
     menuCategories[3] = {"Timers", TimerSubItems, 2};
 }
 
-void Model::initializeSystemState()
-{
-    currentTruckState = TRUCK_STATE_UNKNOWN;
-    currentTrailerState = TRAILER_STATE_UNKNOWN;
-    currentErrorState = ERROR_NONE;
-    flashState = false;
-    lastFlashTime = 0;
-    stateChanged = false;
-    rollValue = 0;
-    rollValid = false;
-    ptoActive = false;
-    ptoValid = false;
-    alarmActive = false;
-    //latchButtonPressed = false;  // ADD THIS
-}
 
 MenuSubItem* Model::getCurrentSubItem()
 {
@@ -167,19 +143,7 @@ void Model::tick()
 }
 
 // UPDATED: Removed PTO_DISABLED, added OVERPRESSURE alarm
-void Model::updateAlarmState()
-{
-    bool newAlarmState = (currentErrorState == ERROR_ESTOP_ACTIVE ||
-                         currentErrorState == ERROR_ANGLE_EXCEEDED ||
-                         currentErrorState == ERROR_OVERPRESSURE);  // UPDATED: Added overpressure
 
-    if (alarmActive != newAlarmState)
-    {
-        alarmActive = newAlarmState;
-        Output1_control = alarmActive;
-        stateChanged = true;
-    }
-}
 
 bool Model::isAlarmActive() const
 {
@@ -572,132 +536,8 @@ int32_t Model::constrain(int32_t value, int32_t minVal, int32_t maxVal)
     return value;
 }
 
-const char* Model::getButtonFeedbackMessage(uint8_t buttonPressed, bool isHeld) const
-{
-    switch(currentTruckState)
-    {
-        case TRUCK_STATE_LATCHED:
-            // When truck is latched, all operations require unlatching first
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "UNLATCH FIRST" : "UNLATCH FIRST";  // RAISE button
-                case 2: return isHeld ? "UNLATCH FIRST" : "UNLATCH FIRST";  // LOWER button
-                case 3: return "";                                       // LATCH button
-            }
-            break;
-
-        case TRUCK_STATE_LOWERED:
-            // When truck is lowered, raising is allowed, lowering is redundant
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - show operation
-                case 2: return isHeld ? "ALREADY LOWERED" : "ALREADY LOWERED"; // LOWER button - already in position
-                case 3: return "";                                          // LATCH button
-            }
-            break;
-
-        case TRUCK_STATE_MOVING:
-            // FIXED: Handle moving state to prevent flickering during pressure changes
-            // Allow normal raise/lower feedback to continue during hydraulic operations
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - continue showing operation
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - continue showing operation
-                case 3: return "WAIT - MOVING";                                // LATCH button - wait for movement to stop
-            }
-            break;
-
-        case TRUCK_STATE_RAISED:
-            // When truck is raised, lowering is allowed, raising is redundant
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "ALREADY RAISED" : "ALREADY RAISED";   // RAISE button - already in position
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - show operation
-                case 3: return "LOWER FIRST";                                  // LATCH button - must lower before latching
-            }
-            break;
-
-        case TRUCK_STATE_UNKNOWN:
-            // When state is unknown, allow all operations with appropriate feedback
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - show operation
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - show operation
-                case 3: return "";                                          // LATCH button
-            }
-            break;
-    }
-
-    // Default return for any unhandled cases
-    return "";
-}
 
 // Add this method to Model.cpp after the existing getButtonFeedbackMessage method
-
-const char* Model::getTrailerButtonFeedbackMessage(uint8_t buttonPressed, bool isHeld) const
-{
-    switch(currentTrailerState)
-    {
-        case TRAILER_STATE_LATCHED:
-            // When trailer is latched, all operations require unlatching first
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "UNLATCH FIRST" : "UNLATCH FIRST";  // RAISE button
-                case 2: return isHeld ? "UNLATCH FIRST" : "UNLATCH FIRST";  // LOWER button
-                case 3: return "";                                           // LATCH button
-            }
-            break;
-
-        case TRAILER_STATE_LOWERED:
-            // When trailer is lowered, raising is allowed, lowering is redundant
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - show operation
-                case 2: return isHeld ? "ALREADY LOWERED" : "ALREADY LOWERED"; // LOWER button - already in position
-                case 3: return "";                                             // LATCH button
-            }
-            break;
-
-        case TRAILER_STATE_MOVING:
-            // Handle moving state to prevent flickering during pressure changes
-            // Allow normal raise/lower feedback to continue during hydraulic operations
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - continue showing operation
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - continue showing operation
-                case 3: return "WAIT - MOVING";                                // LATCH button - wait for movement to stop
-            }
-            break;
-
-        case TRAILER_STATE_RAISED:
-            // When trailer is raised, lowering is allowed, raising is redundant
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "ALREADY RAISED" : "ALREADY RAISED";   // RAISE button - already in position
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - show operation
-                case 3: return "LOWER FIRST";                                  // LATCH button - must lower before latching
-            }
-            break;
-
-        case TRAILER_STATE_UNKNOWN:
-            // When state is unknown, allow all operations with appropriate feedback
-            switch(buttonPressed)
-            {
-                case 1: return isHeld ? "RAISING..." : "HOLD TO RAISE";        // RAISE button - show operation
-                case 2: return isHeld ? "LOWERING..." : "HOLD TO LOWER";       // LOWER button - show operation
-                case 3: return "";                                             // LATCH button
-            }
-            break;
-    }
-
-    // Default return for any unhandled cases
-    return "";
-}
-
-uint16_t Model::getTruckOverloadSetpoint() const
-{
-    return S35_config[TOUCHGFX_TRUCK_OVERLOAD];
-}
 
 // NEW: Method to get latch status text for OPEN/CLOSE display
 
