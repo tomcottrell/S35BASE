@@ -1,0 +1,2159 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "ScreenTestHome",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "textVersion",
+            "X": 10,
+            "Y": 178,
+            "Width": 300,
+            "Height": 24,
+            "TextId": "__SingleUse_DDD1",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_8HN7",
+              "UseBuffer": true,
+              "BufferSize": 24
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "test_1",
+            "X": -1,
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 174,
+            "Y": 215,
+            "Width": 53,
+            "Height": 22,
+            "TextId": "__SingleUse_8D9K",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "LATCH",
+            "X": 240,
+            "Y": 215,
+            "Width": 80,
+            "Height": 23,
+            "TextId": "__SingleUse_LLVS",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_TBV7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 99,
+            "Y": 215,
+            "Width": 43,
+            "Height": 22,
+            "TextId": "__SingleUse_Z8CI",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 10,
+            "Y": 23,
+            "Height": 22,
+            "TextId": "__SingleUse_1Y1W",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "box6",
+            "Width": 320,
+            "Height": 23
+          },
+          {
+            "Type": "TextArea",
+            "Name": "testtext",
+            "X": 24,
+            "Y": -1,
+            "Width": 215,
+            "Height": 24,
+            "TextId": "__SingleUse_DG0F",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 250,
+              "Blue": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZLUT",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "UNLOCKED",
+            "X": 288,
+            "Y": 142,
+            "Width": 24,
+            "Height": 24,
+            "Visible": false,
+            "Filename": "__generated\\icon_theme_images_action_lock_open_48_44_0AA34A.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "next",
+            "X": 20,
+            "Y": 215,
+            "Width": 37,
+            "Height": 27,
+            "Filename": "__generated\\icon_theme_images_navigation_east_50_50_000000.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "handle_button_press_0",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 4
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
+              "ParameterValue": "0",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
+              "ParameterValue": "1",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
+              "ParameterValue": "2",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "Go_to_Outputs_screen",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call ScreenTestHome GoToOutputsTestScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenOutputsTest"
+            }
+          },
+          {
+            "InteractionName": "Go_to_Home_screen",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call ScreenTestHome GoToHomeScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "Go_to_LCD_screen",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call ScreenTestHome GoToLCDtestScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenLCDtest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_3",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenTestHome buttonHandler",
+              "ParameterValue": "3",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "NEXTPAGE",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "navigateBasedOnVehicleType"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "buttonHandler",
+            "Description": "calls a button handler",
+            "HasValue": true,
+            "ValueType": "uint8_t"
+          },
+          {
+            "Name": "GoToCANtestScreen",
+            "Description": "Change to CAN screen"
+          },
+          {
+            "Name": "GoToOutputsTestScreen",
+            "Description": "Change to outputs screen"
+          },
+          {
+            "Name": "GoToInputsTestScreen",
+            "Description": "Change to inputs screen"
+          },
+          {
+            "Name": "GoToHomeScreen",
+            "Description": "Change to home screen"
+          },
+          {
+            "Name": "GoToLCDtestScreen",
+            "Description": "Change to LCD test screen"
+          }
+        ]
+      },
+      {
+        "Name": "ScreenOutputsTest",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textExit",
+            "X": 21,
+            "Y": 219,
+            "Width": 33,
+            "Height": 22,
+            "TextId": "__SingleUse_T00Q",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOutput2",
+            "X": 9,
+            "Y": 39,
+            "Width": 89,
+            "Height": 22,
+            "TextId": "__SingleUse_IT8S",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OPD1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOutput1",
+            "X": 9,
+            "Y": 8,
+            "Width": 88,
+            "Height": 22,
+            "TextId": "__SingleUse_5PB5",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_VLRX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOut1",
+            "X": 98,
+            "Y": 219,
+            "Width": 37,
+            "Height": 22,
+            "TextId": "__SingleUse_PT8Q",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOut2",
+            "X": 178,
+            "Y": 219,
+            "Width": 38,
+            "Height": 22,
+            "TextId": "__SingleUse_AW8J",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "handle_button_press_0",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenOutputsTest buttonHandler",
+              "ParameterValue": "0",
+              "ActionComponent": "ScreenOutputsTest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenOutputsTest buttonHandler",
+              "ParameterValue": "1",
+              "ActionComponent": "ScreenOutputsTest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenOutputsTest buttonHandler",
+              "ParameterValue": "2",
+              "ActionComponent": "ScreenOutputsTest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_3",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenOutputsTest buttonHandler",
+              "ParameterValue": "3",
+              "ActionComponent": "ScreenOutputsTest"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "buttonHandler",
+            "Description": "calls a button handler",
+            "HasValue": true,
+            "ValueType": "uint8_t"
+          }
+        ]
+      },
+      {
+        "Name": "ScreenLCDtest",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box6",
+            "Width": 320,
+            "Height": 23
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textValueBrightness",
+            "X": 3,
+            "Y": 24,
+            "Width": 220,
+            "Height": 24,
+            "TextId": "__SingleUse_1YE5",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_IB5N",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOut2",
+            "X": 197,
+            "Y": 219,
+            "Width": 6,
+            "Height": 22,
+            "TextId": "__SingleUse_UVSW",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOut1",
+            "X": 114,
+            "Y": 219,
+            "Width": 10,
+            "Height": 22,
+            "TextId": "__SingleUse_VYTM",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textExit",
+            "X": 21,
+            "Y": 219,
+            "Width": 33,
+            "Height": 22,
+            "TextId": "__SingleUse_G03W",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "handle_button_press_0",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenLCDtest buttonHandler",
+              "ParameterValue": "0",
+              "ActionComponent": "ScreenLCDtest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenLCDtest buttonHandler",
+              "ParameterValue": "1",
+              "ActionComponent": "ScreenLCDtest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenLCDtest buttonHandler",
+              "ParameterValue": "2",
+              "ActionComponent": "ScreenLCDtest"
+            }
+          },
+          {
+            "InteractionName": "handle_button_press_3",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ScreenLCDtest buttonHandler",
+              "ParameterValue": "3",
+              "ActionComponent": "ScreenLCDtest"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "buttonHandler",
+            "Description": "Handles button presses",
+            "HasValue": true,
+            "ValueType": "uint8_t"
+          }
+        ]
+      },
+      {
+        "Name": "MenuLayer1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": -1,
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "Ribbon",
+            "Y": 1,
+            "Width": 320,
+            "Height": 23,
+            "LockPosition": true
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Enter",
+            "X": 265,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_subdirectory_arrow_right_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Menu",
+            "X": 25,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_menu_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Up",
+            "X": 105,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_upward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Down",
+            "X": 185,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_downward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 106,
+            "Y": -1,
+            "Width": 109,
+            "Height": 25,
+            "TextId": "__SingleUse_LSG5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GOTOMENU2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "Down",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleDownButton"
+            }
+          },
+          {
+            "InteractionName": "Up",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleUpButton"
+            }
+          },
+          {
+            "InteractionName": "Enter",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleEnterButton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MenuLayer2",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": -1,
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "Ribbon",
+            "Y": 1,
+            "Width": 320,
+            "Height": 23,
+            "LockPosition": true
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Down_1",
+            "X": 185,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_downward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Up_1",
+            "X": 105,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_upward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Menu",
+            "X": 25,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_menu_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Enter_1",
+            "X": 265,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_subdirectory_arrow_right_30_30_000000.svg.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "CategoryTitle",
+            "X": 64,
+            "Width": 193,
+            "Height": 25,
+            "TextId": "__SingleUse_UN0M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_12CH",
+              "UseBuffer": true,
+              "BufferSize": 30
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GOTOMENU3",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuLayer1"
+            }
+          },
+          {
+            "InteractionName": "Down",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleDownButton"
+            }
+          },
+          {
+            "InteractionName": "Up",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleUpButton"
+            }
+          },
+          {
+            "InteractionName": "Enter",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleEnterButton"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 7
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuLayer3"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MenuLayer3",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": -1,
+            "Width": 320,
+            "Height": 240,
+            "LockPosition": true,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "Ribbon",
+            "Y": 1,
+            "Width": 320,
+            "Height": 23,
+            "LockPosition": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "menuItemBackground",
+            "X": 16,
+            "Y": 40,
+            "Width": 293,
+            "Height": 29,
+            "Color": {
+              "Red": 40,
+              "Green": 105,
+              "Blue": 184
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "menuItemBackground_1",
+            "X": 16,
+            "Y": 80,
+            "Width": 293,
+            "Height": 113,
+            "Color": {
+              "Red": 180,
+              "Green": 195,
+              "Blue": 214
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Enter_1",
+            "X": 265,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_subdirectory_arrow_right_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Menu",
+            "X": 25,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_menu_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Up_1",
+            "X": 105,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_upward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Down_1",
+            "X": 185,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_downward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "enumValueText",
+            "X": 37,
+            "Y": 41,
+            "Width": 246,
+            "Height": 29,
+            "Visible": false,
+            "TextId": "__SingleUse_8246",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_K4NX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "numberValueText",
+            "X": 71,
+            "Y": 40,
+            "Width": 98,
+            "Height": 29,
+            "TextId": "__SingleUse_AHFH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_AR9V",
+              "UseBuffer": true,
+              "BufferSize": 50
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "minValueText",
+            "X": 19,
+            "Y": 41,
+            "Width": 97,
+            "Height": 29,
+            "TextId": "__SingleUse_HJGX",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_CNYR",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "maxValueText",
+            "X": 203,
+            "Y": 41,
+            "Width": 103,
+            "Height": 29,
+            "TextId": "__SingleUse_3IVH",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_7YGH",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "itemNameText",
+            "X": 28,
+            "Y": -1,
+            "Width": 264,
+            "Height": 23,
+            "TextId": "__SingleUse_P2M3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_BMPI",
+              "UseBuffer": true,
+              "BufferSize": 50
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "descText",
+            "X": 19,
+            "Y": 80,
+            "Width": 287,
+            "Height": 113,
+            "TextId": "__SingleUse_ZZBX",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_WSQS",
+              "UseBuffer": true,
+              "BufferSize": 150
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "unitsText",
+            "X": 171,
+            "Y": 40,
+            "Width": 78,
+            "Height": 29,
+            "TextId": "__SingleUse_9M44",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_AEMJ"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GOHOME",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuLayer2"
+            }
+          },
+          {
+            "InteractionName": "Up",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleUpButton"
+            }
+          },
+          {
+            "InteractionName": "Down",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleDownButton"
+            }
+          },
+          {
+            "InteractionName": "Enter",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleEnterButton"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Diagnostic",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box6",
+            "Width": 320,
+            "Height": 23
+          },
+          {
+            "Type": "Image",
+            "Name": "test",
+            "X": -1,
+            "Width": 320,
+            "Height": 240,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "X": 9,
+            "Y": 92,
+            "Width": 304,
+            "Height": 119,
+            "Color": {
+              "Red": 232,
+              "Green": 232,
+              "Blue": 232
+            },
+            "BorderSize": 2,
+            "Alpha": 174
+          },
+          {
+            "Type": "Box",
+            "Name": "box6_1",
+            "Width": 320,
+            "Height": 23
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "HEADER",
+            "X": 113,
+            "Y": -1,
+            "Width": 97,
+            "Height": 22,
+            "TextId": "__SingleUse_9KPE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_75H0"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "HEADER_1",
+            "X": 3,
+            "Width": 62,
+            "Height": 22,
+            "TextId": "__SingleUse_HA1K",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_L7KG"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "LATCH",
+            "X": 258,
+            "Y": 215,
+            "Width": 44,
+            "Height": 22,
+            "TextId": "__SingleUse_NOVX",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_UB6I",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box7",
+            "X": 8,
+            "Y": 114,
+            "Width": 303,
+            "Height": 2
+          },
+          {
+            "Type": "Box",
+            "Name": "box7_2",
+            "X": 107,
+            "Y": 94,
+            "Width": 2,
+            "Height": 117
+          },
+          {
+            "Type": "Box",
+            "Name": "box7_2_2",
+            "X": 205,
+            "Y": 93,
+            "Width": 2,
+            "Height": 70
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Inclo",
+            "X": 12,
+            "Y": 160,
+            "Width": 39,
+            "Height": 22,
+            "TextId": "__SingleUse_SDL8",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "param",
+            "X": 12,
+            "Y": 90,
+            "Height": 22,
+            "TextId": "__SingleUse_IYKH",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "truck",
+            "X": 113,
+            "Y": 92,
+            "Width": 37,
+            "Height": 22,
+            "TextId": "__SingleUse_CTSB",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "trailer",
+            "X": 210,
+            "Y": 92,
+            "Width": 41,
+            "Height": 22,
+            "TextId": "__SingleUse_J2RQ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "HydPress",
+            "X": 12,
+            "Y": 113,
+            "Width": 70,
+            "Height": 22,
+            "TextId": "__SingleUse_ENWZ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "box7_1",
+            "X": 9,
+            "Y": 138,
+            "Width": 301,
+            "Height": 2
+          },
+          {
+            "Type": "Box",
+            "Name": "box7_1_1",
+            "X": 9,
+            "Y": 162,
+            "Width": 302,
+            "Height": 2
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Latch",
+            "X": 13,
+            "Y": 137,
+            "Width": 37,
+            "Height": 22,
+            "TextId": "__SingleUse_5YCL",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "EStop",
+            "X": 12,
+            "Y": 184,
+            "Width": 41,
+            "Height": 22,
+            "TextId": "__SingleUse_DD70",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "box7_1_1_1",
+            "X": 9,
+            "Y": 184,
+            "Width": 301,
+            "Height": 2
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Inclotxt",
+            "X": 164,
+            "Y": 160,
+            "Width": 87,
+            "Height": 25,
+            "TextId": "__SingleUse_W1ZF",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_KFHC",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "HydPresstxt",
+            "X": 113,
+            "Y": 116,
+            "Width": 100,
+            "Height": 23,
+            "TextId": "__SingleUse_EGUK",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_QUFX",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Latchtxt",
+            "X": 113,
+            "Y": 138,
+            "Width": 92,
+            "Height": 23,
+            "TextId": "__SingleUse_22VR",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_RNFU",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Latchtxt_trailer",
+            "X": 210,
+            "Y": 138,
+            "Width": 99,
+            "Height": 23,
+            "TextId": "__SingleUse_BQWI",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_QS83",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "HydPresstxt_trailer",
+            "X": 210,
+            "Y": 116,
+            "Width": 100,
+            "Height": 23,
+            "TextId": "__SingleUse_TJ3D",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_D8BX",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "EStoptxt",
+            "X": 146,
+            "Y": 184,
+            "Width": 122,
+            "Height": 23,
+            "TextId": "__SingleUse_L3ZN",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_KRNC",
+              "UseBuffer": true,
+              "BufferSize": 25
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage2",
+            "X": 20,
+            "Y": 215,
+            "Width": 37,
+            "Height": 27,
+            "Filename": "__generated\\icon_theme_images_navigation_east_50_50_000000.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "NEXT_PAGE",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "GOTOMENU",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "PasswordEntry"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "PasswordEntry",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Width": 320,
+            "Height": 240,
+            "LockPosition": true,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "Ribbon",
+            "Y": 1,
+            "Width": 320,
+            "Height": 23,
+            "LockPosition": true
+          },
+          {
+            "Type": "Image",
+            "Name": "Down",
+            "X": 185,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_downward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Up",
+            "X": 105,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_arrow_upward_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Menu",
+            "X": 25,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_menu_30_30_000000.svg.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Enter",
+            "X": 265,
+            "Y": 213,
+            "Width": 30,
+            "Height": 30,
+            "RelativeFilename": "__generated\\icon_theme_images_navigation_subdirectory_arrow_right_30_30_000000.svg.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header",
+            "X": 28,
+            "Width": 264,
+            "Height": 23,
+            "TextId": "__SingleUse_X5EC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_V1NX"
+            }
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "X": 67,
+            "Y": 70,
+            "Width": 37,
+            "Height": 66,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder4",
+            "X": 217,
+            "Y": 71,
+            "Width": 37,
+            "Height": 66,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder3",
+            "X": 167,
+            "Y": 70,
+            "Width": 37,
+            "Height": 66,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder2",
+            "X": 117,
+            "Y": 70,
+            "Width": 37,
+            "Height": 66,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "TextArea",
+            "Name": "prompt",
+            "X": 25,
+            "Y": 33,
+            "Width": 272,
+            "Height": 27,
+            "TextId": "__SingleUse_UZ7M",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_1QIZ",
+              "UseBuffer": true,
+              "BufferSize": 35
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "digit1",
+            "X": 81,
+            "Y": 91,
+            "Width": 10,
+            "Height": 24,
+            "TextId": "__SingleUse_MJGL",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_IO0T",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "digit2",
+            "X": 131,
+            "Y": 91,
+            "Width": 10,
+            "Height": 24,
+            "TextId": "__SingleUse_LT6U",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_0379",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "digit3",
+            "X": 181,
+            "Y": 91,
+            "Width": 10,
+            "Height": 24,
+            "TextId": "__SingleUse_BFI7",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_HXM8",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "digit4",
+            "X": 231,
+            "Y": 91,
+            "Width": 10,
+            "Height": 24,
+            "TextId": "__SingleUse_Z513",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_O105",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "HOME",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenTestHome"
+            }
+          },
+          {
+            "InteractionName": "UP",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleUpButton"
+            }
+          },
+          {
+            "InteractionName": "DOWN",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleDownButton"
+            }
+          },
+          {
+            "InteractionName": "ENTER",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "handleEnterButton"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "ScrollListContainerItem",
+        "X": 57,
+        "Y": 16,
+        "Width": 206,
+        "Height": 54,
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Width": 206,
+            "Height": 47,
+            "Color": {
+              "Green": 141,
+              "Blue": 160
+            },
+            "BorderColor": {
+              "Red": 77,
+              "Green": 77,
+              "Blue": 77
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 60,
+            "Y": 16,
+            "Width": 80,
+            "Height": 24,
+            "TextId": "__SingleUse_RD3O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "Y": 47,
+            "Width": 206,
+            "Height": 15,
+            "Color": {
+              "Red": 80,
+              "Green": 142,
+              "Blue": 173
+            },
+            "StartX": 5.0,
+            "StartY": 5.0,
+            "EndX": 295.0,
+            "EndY": 5.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "X": 12,
+            "Y": 11,
+            "Width": 24,
+            "Height": 24,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "ALARM",
+        "Width": 320,
+        "Height": 240,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 9,
+            "Y": 23,
+            "Width": 301,
+            "Height": 23,
+            "Color": {
+              "Red": 222,
+              "Green": 111,
+              "Blue": 111
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "MenuItemContainer",
+        "Width": 293,
+        "Height": 29,
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Name": "menuItemBackground",
+            "Y": 1,
+            "Width": 293,
+            "Height": 27,
+            "Color": {
+              "Red": 40,
+              "Green": 105,
+              "Blue": 184
+            },
+            "BorderSize": 2
+          },
+          {
+            "Type": "Box",
+            "Name": "menuItemBackground1",
+            "Width": 289,
+            "Height": 26,
+            "Visible": false,
+            "Color": {
+              "Red": 148,
+              "Green": 157,
+              "Blue": 168
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "menuItemText",
+            "X": 2,
+            "Y": 2,
+            "Width": 289,
+            "Height": 26,
+            "TextId": "__SingleUse_RFEJ",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_KC7B",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "UxTouchGfxDemo",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "ScreenTestHome",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplateName": "Simulator",
+    "ApplicationTemplateVersion": "2.0.0",
+    "ApplicationTemplateDescription": "Simulator Application Template",
+    "AvailableColorDepths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      24
+    ],
+    "AvailableLCDs": {
+      "1": "LCD1bpp",
+      "2": "LCD2bpp",
+      "4": "LCD4bpp",
+      "8": "LCD8bpp_ARGB2222",
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "Features": [
+          {
+            "Id": "TextureMapperImageFormats",
+            "Features": [
+              {
+                "Id": "RGB888",
+                "IsEnabled": true
+              },
+              {
+                "Id": "ARGB8888",
+                "IsEnabled": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "",
+    "FlashTargetCommand": "",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.22.1",
+  "CreatedBy": "4.22.1"
+}

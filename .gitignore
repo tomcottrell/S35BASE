@@ -1,0 +1,286 @@
+# .gitignore for STM32 + TouchGFX + FreeRTOS Projects
+
+#############################################################################
+# Build Artifacts
+#############################################################################
+
+# Build directories
+build/
+Debug/
+Release/
+*.build/
+cmake-build-*/
+
+# Object files and libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# Binary outputs
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.lss
+*.sym
+*.axf
+
+# Linker files
+*.ld.bak
+
+#############################################################################
+# STM32CubeIDE / Eclipse Workspace
+#############################################################################
+
+# Eclipse workspace files
+.metadata/
+.settings/
+.cproject
+.project
+.launches/
+*.launch
+
+# STM32CubeIDE specific
+.mxproject
+.mxproject.bak
+*.ioc.bak
+
+# STM32CubeMX backup files
+*.tmp
+mx.scratch
+
+#############################################################################
+# TouchGFX Generated Files
+#############################################################################
+
+# TouchGFX Designer generated code
+TouchGFX_App/generated/
+TouchGFX_App/gui/generated/
+TouchGFX_App/target/generated/
+
+# TouchGFX simulator build
+TouchGFX_App/simulator/
+TouchGFX_App/build/
+
+# TouchGFX cache and temporary files
+TouchGFX_App/cache/
+TouchGFX_App/*.touchgfx.part
+TouchGFX_App/*.log
+
+#############################################################################
+# Compiler and Toolchain
+#############################################################################
+
+# ARM GCC
+*.su
+*.d
+*.lst
+
+# IAR Workbench
+Debug/
+Release/
+settings/
+*.dep
+*.ewd
+*.ewp
+*.eww
+*.dni
+*.wsdt
+*.pbd
+*.pbi
+*.pbw
+
+# Keil µVision
+*.uvopt
+*.uvproj
+*.uvgui.*
+*.bak
+DebugConfig/
+RTE/
+Objects/
+Listings/
+
+#############################################################################
+# Version Control
+#############################################################################
+
+# Git
+*.patch
+*.diff
+
+# SVN
+.svn/
+
+#############################################################################
+# IDE and Editor Files
+#############################################################################
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# CLion / IntelliJ
+.idea/
+cmake-build-*/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+#############################################################################
+# Documentation
+#############################################################################
+
+# Generated documentation
+docs/html/
+docs/latex/
+*.pdf.bak
+
+# Doxygen
+Doxyfile.bak
+
+#############################################################################
+# Temporary and System Files
+#############################################################################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.directory
+.Trash-*/
+
+# Generic temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+#############################################################################
+# Logs and Debugging
+#############################################################################
+
+# Log files
+*.log
+*.tlog
+
+# Core dumps
+core
+core.*
+
+# GDB files
+.gdb_history
+
+#############################################################################
+# Custom Project Specific (Modify as needed)
+#############################################################################
+
+# Configuration backups (keep main config files, exclude backups)
+*.config.bak
+*_backup.*
+
+# Test results
+test_results/
+coverage/
+
+# Calibration data (if you want to exclude)
+# calibration/
+
+# Certificates and keys (IMPORTANT: Never commit these!)
+*.key
+*.pem
+*.crt
+certificates/
+
+# Build scripts output
+build_output/
+
+#############################################################################
+# Keep These Files (Explicit Inclusions)
+#############################################################################
+
+# Important: Make sure these are NOT ignored
+!*.c
+!*.h
+!*.cpp
+!*.hpp
+!*.s
+!*.S
+!*.ioc
+!*.touchgfx
+!Makefile
+!CMakeLists.txt
+!*.md
+!*.txt
+
+# Project configuration (keep main files)
+!.cproject.example
+!.project.example
+
+#############################################################################
+# FATFS and File System
+#############################################################################
+
+# FATFS generated files (if using)
+FATFS/Target/sd_diskio.c.bak
+
+#############################################################################
+# Custom Middleware
+#############################################################################
+
+# FreeRTOS (only if using external, not ST's version)
+# FreeRTOS/
+
+# LittleFS temporary files
+littlefs_cache/
+
+#############################################################################
+# Hardware Specific
+#############################################################################
+
+# ST-LINK Utility
+*.hex.bak
+
+# J-Link
+JLinkLog.txt
+JLinkSettings.ini
+
+#############################################################################
+# Package Managers
+#############################################################################
+
+# Package manager files (if using)
+packages/
+libs/
+dependencies/

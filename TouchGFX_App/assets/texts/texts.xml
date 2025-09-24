@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.22.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="ScrollView">
+      <Text Id="I5" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Oil Temperature</Translation>
+      </Text>
+      <Text Id="I4" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Oil  Pressure</Translation>
+      </Text>
+      <Text Id="I3" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">RPM </Translation>
+      </Text>
+      <Text Id="I2" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Temperature</Translation>
+      </Text>
+      <Text Id="I1" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Status LEDs</Translation>
+      </Text>
+      <Text Id="I0" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Brightness</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_L7KG" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">V1.0000</Translation>
+      </Text>
+      <Text Id="__SingleUse_HA1K" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WSQS" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">High range of the Truck Hydraulic ddddd</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZZBX" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_AEMJ" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">bar</Translation>
+      </Text>
+      <Text Id="__SingleUse_9M44" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_V1NX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">OEM PASSWORD</Translation>
+      </Text>
+      <Text Id="__SingleUse_O105" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z513" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HXM8" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_BFI7" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_0379" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_LT6U" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IO0T" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_MJGL" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_1QIZ" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">ENTER PASSWORD</Translation>
+      </Text>
+      <Text Id="__SingleUse_UZ7M" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_X5EC" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QS83" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">OPEN</Translation>
+      </Text>
+      <Text Id="__SingleUse_BQWI" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_D8BX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_TJ3D" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_J2RQ" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Trailer</Translation>
+      </Text>
+      <Text Id="__SingleUse_CTSB" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Truck</Translation>
+      </Text>
+      <Text Id="__SingleUse_IYKH" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_KRNC" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">ACTIVE</Translation>
+      </Text>
+      <Text Id="__SingleUse_L3ZN" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RNFU" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">CLOSED</Translation>
+      </Text>
+      <Text Id="__SingleUse_22VR" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QUFX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_EGUK" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KFHC" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">45</Translation>
+      </Text>
+      <Text Id="__SingleUse_W1ZF" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DD70" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">EStop</Translation>
+      </Text>
+      <Text Id="__SingleUse_5YCL" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Latch</Translation>
+      </Text>
+      <Text Id="__SingleUse_ENWZ" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Hyd Press</Translation>
+      </Text>
+      <Text Id="__SingleUse_SDL8" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Angle</Translation>
+      </Text>
+      <Text Id="__SingleUse_UB6I" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">MENU</Translation>
+      </Text>
+      <Text Id="__SingleUse_NOVX" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_75H0" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">DIAGNOSTICS</Translation>
+      </Text>
+      <Text Id="__SingleUse_9KPE" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LSG5" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">Menu</Translation>
+      </Text>
+      <Text Id="__SingleUse_12CH" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Category</Translation>
+      </Text>
+      <Text Id="__SingleUse_7YGH" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Max Value</Translation>
+      </Text>
+      <Text Id="__SingleUse_CNYR" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Min Value</Translation>
+      </Text>
+      <Text Id="__SingleUse_K4NX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Enum Value</Translation>
+      </Text>
+      <Text Id="__SingleUse_AR9V" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">100</Translation>
+      </Text>
+      <Text Id="__SingleUse_BMPI" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Item name</Translation>
+      </Text>
+      <Text Id="__SingleUse_KC7B" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_3IVH" Alignment="Right" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HJGX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8246" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_AHFH" Alignment="Right" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P2M3" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_UN0M" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RFEJ" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TBV7" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">OPEN</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZLUT" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_DG0F" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_1Y1W" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_LLVS" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IB5N" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">---</Translation>
+      </Text>
+      <Text Id="__SingleUse_1YE5" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Lcd brightness: &lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_UVSW" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_VYTM" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">+</Translation>
+      </Text>
+      <Text Id="__SingleUse_G03W" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">EXIT</Translation>
+      </Text>
+      <Text Id="__SingleUse_8HN7" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Base project V1.00.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_8D9K" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">LOWER</Translation>
+      </Text>
+      <Text Id="__SingleUse_AW8J" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Out 2</Translation>
+      </Text>
+      <Text Id="__SingleUse_PT8Q" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Out 1</Translation>
+      </Text>
+      <Text Id="__SingleUse_OPD1" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_IT8S" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Output #2: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_VLRX" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_5PB5" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Output #1: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_T00Q" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">EXIT</Translation>
+      </Text>
+      <Text Id="tx_count" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">789</Translation>
+      </Text>
+      <Text Id="gauge_value1" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">----</Translation>
+      </Text>
+      <Text Id="__SingleUse_DDD1" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z8CI" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">RAISE</Translation>
+      </Text>
+      <Text Id="__SingleUse_RD3O" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB">Your Text</Translation>
+      </Text>
+      <Text Id="rpm_label" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB"> RPM &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="temp_label" Alignment="Center" TypographyId="Gemunu_20">
+        <Translation Language="GB">&lt;value&gt;[°C]</Translation>
+      </Text>
+      <Text Id="ResourceId1" Alignment="Left" TypographyId="Gemunu_20">
+        <Translation Language="GB" Alignment="Center">LEDs</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Small" Font="times.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Gemunu_20" Font="GemunuLibre-Regular.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0-9.a-z,A-Z" WildcardCharacterRanges="0-9,a-z,A-Z" />
+  </Typographies>
+</TextDatabase>
