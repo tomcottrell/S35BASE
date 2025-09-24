@@ -1,18 +1,12 @@
 #include <gui/screentesthome_screen/ScreenTestHomeView.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <gui/model/Model.hpp>
 #include <gui/common/FrontendApplication.hpp>
-#include <cstdlib>  // For abs() function
 #include "ConfigMemory.h"
-#include "nonVolStorage.h"
-#include <gui/common/FrontendApplication.hpp>
 #include <cstring>
 
-// External button state variables for CAN transmission
-extern uint8_t Raisetest;
-extern uint8_t Lowertest;
-extern uint8_t Latchtest;
-extern uint8_t Traystate;
+// External firmware version string
+extern char firmware_version[];
+#define VERSION_STRING_LENGTH 24
 
 ScreenTestHomeView::ScreenTestHomeView() :
     buttonHandlerObj(10, static_cast<Button*>(&button0),
@@ -22,41 +16,21 @@ ScreenTestHomeView::ScreenTestHomeView() :
     m_buttonController(static_cast<TouchGfxInputController*>(HAL::getInstance()->getButtonController())),
     showButtonFeedback(false),
     buttonFeedbackStartTime(0),
-    lastButtonPressed(0),
-    latchToggleState(false),
-	isButtonHeld(false)
+    lastButtonPressed(0)
 {
 }
-
-extern char firmware_version[];
-#define VERSION_STRING_LENGTH		24
 
 void ScreenTestHomeView::setupScreen()
 {
     ScreenTestHomeViewBase::setupScreen();
+
+    // Display firmware version
     Unicode::strncpy(textVersionBuffer, firmware_version, VERSION_STRING_LENGTH);
+    textVersion.invalidate();
 
-    // Initialize display with current state
+    // Initialize display state
     initializeDisplayState();
-    // Check current alarm state when entering page
-    initializeAlarmDisplay();  // This now checks current state instead of always hiding
-    // Initialize LATCH display
-    initializeLatchDisplay();
 }
-
-// Also add this initialization method to setupScreen():
-void ScreenTestHomeView::initializeLatchDisplay()
-{
-    // Simple initialization based on current Latchtest value
-    const char* latchText = (Latchtest == 1) ? "CLOSE" : "OPEN";
-
-    // Update the LATCH text - replace with your actual buffer name
-    Unicode::strncpy(LATCHBuffer, latchText, LATCH_SIZE - 1);
-    LATCHBuffer[LATCH_SIZE - 1] = 0;
-}
-
-
-
 
 void ScreenTestHomeView::tearDownScreen()
 {
@@ -65,57 +39,98 @@ void ScreenTestHomeView::tearDownScreen()
 
 void ScreenTestHomeView::initializeDisplayState()
 {
+    // Initialize basic system status displays
+    updateSystemStatus();
+
+    // Clear any button feedback
+    showButtonFeedback = false;
+    hideButtonFeedback();
+}
+
+void ScreenTestHomeView::updateSystemStatus()
+{
+    // Show basic system operational status
+    // This can be expanded later for IX3212 PDM status
+
+    // Example: Show CAN communication status
     Model& model = static_cast<FrontendApplication*>(&application())->getModel();
 
-    // Force update all displays on setup (bypass change detection)
-    forceUpdateTruckStatusDisplay(model);
-    forceUpdateRollDisplay(model);
-    forceUpdatePTODisplay(model);
+    // Update system time display if you have one
+    // updateTimeDisplay();
 
-    // Force immediate invalidation to ensure display updates
-    this->invalidate();
+    // Update basic status indicators
+    // This is where you'll add IX3212 status later
 }
 
-void ScreenTestHomeView::forceUpdateTruckStatusDisplay(const Model& model)
+void ScreenTestHomeView::handleTickEvent()
 {
-    bool showLocked = false;
-    bool showUnlocked = false;
-    bool showMoving = false;
-    uint16_t newBitmapId = 0;
+    Model& model = static_cast<FrontendApplication*>(&application())->getModel();
+    bool displayChanged = false;
 
-    // Get current truck state first (don't check error state here - alarms handled separately)
-    Model::TruckState truckState = model.getTruckState();
-    newBitmapId = model.getTruckStateBitmapId();
+    // Update button feedback display
+    displayChanged |= updateButtonFeedbackDisplay();
 
-    switch(truckState)
-    {
-        case Model::TRUCK_STATE_LATCHED:
-            showLocked = true;
-            break;
-        case Model::TRUCK_STATE_LOWERED:
-            showUnlocked = true;
-            break;
-        case Model::TRUCK_STATE_MOVING:
-            showUnlocked = true;
-            showMoving = model.getFlashState();
-            break;
-        case Model::TRUCK_STATE_RAISED:
-            showUnlocked = true;
-            break;
-        default:
-            showUnlocked = true;
-            break;
+    // Update system status periodically
+    static uint32_t lastStatusUpdate = 0;
+    if (HAL_GetTick() - lastStatusUpdate > 1000) { // Update every second
+        updateSystemStatus();
+        lastStatusUpdate = HAL_GetTick();
+        displayChanged = true;
     }
 
-    // Apply state immediately
-    previousBitmapId = newBitmapId;
-
+    if (displayChanged) {
+        this->invalidate();
+    }
 }
 
+bool ScreenTestHomeView::updateButtonFeedbackDisplay()
+{
+    bool changed = false;
 
+    if (showButtonFeedback) {
+        uint32_t currentTime = HAL_GetTick();
+
+        // Show feedback for 1 second
+        if (currentTime - buttonFeedbackStartTime > 1000) {
+            showButtonFeedback = false;
+            hideButtonFeedback();
+            changed = true;
+        } else {
+            // Update feedback display based on which button was pressed
+            showButtonFeedback_impl();
+        }
+    }
+
+    return changed;
+}
+
+void ScreenTestHomeView::showButtonFeedback_impl()
+{
+    // Simple button feedback - can be customized for your application
+    switch (lastButtonPressed) {
+        case 1:
+            // Button 1 feedback - you can customize this
+            // Example: Show "Function 1 Activated" message
+            break;
+        case 2:
+            // Button 2 feedback
+            // Example: Show "Function 2 Activated" message
+            break;
+        case 3:
+            // Button 3 feedback
+            // Example: Show "Function 3 Activated" message
+            break;
+    }
+}
+
+void ScreenTestHomeView::hideButtonFeedback()
+{
+    // Hide any button feedback displays
+    // Clear feedback text or hide feedback containers
+}
 
 /*
- * Virtual Action Handlers
+ * Button Handler - Simplified for baseline
  */
 void ScreenTestHomeView::buttonHandler(uint8_t value)
 {
@@ -124,252 +139,94 @@ void ScreenTestHomeView::buttonHandler(uint8_t value)
     switch (value)
     {
         case 0:
-            // Button 0: Navigation
+            // Button 0: Navigate to menu system
+            application().gotoMenuLayer1ScreenNoTransition();
             break;
 
-        case 1: // RAISE button TAPPED (show instruction)
-        case 2: // LOWER button TAPPED (show instruction)
-            lastButtonPressed = value;
-            showButtonFeedback = true;
-            buttonFeedbackStartTime = HAL_GetTick();
-            isButtonHeld = false; // Flag to indicate this is a tap
+        case 1:
+            // Button 1: Custom function 1
+            handleButton1();
             break;
 
-        case 3: // LATCH button - toggle behavior
-            static bool latchActive = false;
-            latchActive = !latchActive;
+        case 2:
+            // Button 2: Custom function 2
+            handleButton2();
+            break;
 
-            Latchtest = latchActive ? 1 : 0;
-            Traystate = latchActive ? 3 : 0;
-
-            lastButtonPressed = 3;
-            showButtonFeedback = true;
-            buttonFeedbackStartTime = HAL_GetTick();
-            isButtonHeld = false;
+        case 3:
+            // Button 3: Custom function 3
+            handleButton3();
             break;
     }
 
     this->invalidate();
 }
 
-// Update handleTickEvent to include latch display update:
-void ScreenTestHomeView::handleTickEvent()
+void ScreenTestHomeView::handleButton1()
 {
-    updateButtonStates();
+    // Custom function for button 1
+    // This is where you'll add your IX3212 control logic
 
-    Model& model = static_cast<FrontendApplication*>(&application())->getModel();
-    bool displayChanged = false;
+    // Example: Toggle IX3212 output 1
+    // IX3212_ToggleOutput(1);
 
-    displayChanged |= updateTruckStatusDisplay(model);
-    displayChanged |= updateRollDisplay(model);
-    displayChanged |= updatePTODisplay(model);
-    displayChanged |= updateButtonFeedbackDisplay(model);
-    displayChanged |= updateAlarmDisplay(model);
-    displayChanged |= updateLatchDisplay();  // ADD THIS LINE
-
-    if (displayChanged) {
-        this->invalidate();
-    }
+    // Show feedback
+    lastButtonPressed = 1;
+    showButtonFeedback = true;
+    buttonFeedbackStartTime = HAL_GetTick();
 }
 
-void ScreenTestHomeView::updateButtonStates()
+void ScreenTestHomeView::handleButton2()
 {
-    // Reset button flags
-    Raisetest = 0;
-    Lowertest = 0;
+    // Custom function for button 2
+    // This is where you'll add your IX3212 control logic
 
-    bool wasHeld = isButtonHeld;
-    isButtonHeld = false;
+    // Example: Cycle through IX3212 modes
+    // IX3212_CycleModes();
 
-    // Check for button hold states
-    if(m_buttonController && m_buttonController->isButtonHeld(1))
-    {
-        Raisetest = 1;
-        Traystate = 1;
-        isButtonHeld = true;
-
-        // Trigger hold feedback if just started holding or button changed
-        if(!wasHeld || lastButtonPressed != 1)
-        {
-            lastButtonPressed = 1;
-            showButtonFeedback = true;
-            buttonFeedbackStartTime = HAL_GetTick();
-        }
-    }
-    else if(m_buttonController && m_buttonController->isButtonHeld(2))
-    {
-        Lowertest = 1;
-        Traystate = 2;
-        isButtonHeld = true;
-
-        if(!wasHeld || lastButtonPressed != 2)
-        {
-            lastButtonPressed = 2;
-            showButtonFeedback = true;
-            buttonFeedbackStartTime = HAL_GetTick();
-        }
-    }
-    else if(m_buttonController && m_buttonController->isButtonHeld(3))
-    {
-        Latchtest = 1;
-        Traystate = 3;
-        // Latch doesn't use hold behavior
-    }
-    else
-    {
-        // No buttons held
-        if(Latchtest == 0) // Only clear tray state if latch is not active
-        {
-            Traystate = 0;
-        }
-    }
+    // Show feedback
+    lastButtonPressed = 2;
+    showButtonFeedback = true;
+    buttonFeedbackStartTime = HAL_GetTick();
 }
 
-bool ScreenTestHomeView::updateTruckStatusDisplay(const Model& model)
+void ScreenTestHomeView::handleButton3()
 {
-    bool changed = false;
-    bool showLocked = false;
-    bool showUnlocked = false;
-    bool showMoving = false;
-    uint16_t newBitmapId = 0;
+    // Custom function for button 3
+    // This is where you'll add your IX3212 control logic
 
-    // Remove error condition handling - alarms handled separately now
-    Model::TruckState truckState = model.getTruckState();
-    newBitmapId = model.getTruckStateBitmapId();
+    // Example: Emergency stop all IX3212 outputs
+    // IX3212_EmergencyStop();
 
-    switch(truckState)
-    {
-        case Model::TRUCK_STATE_LATCHED:
-            showLocked = true;
-            showUnlocked = false;
-            showMoving = false;
-            break;
-
-        case Model::TRUCK_STATE_LOWERED:
-        case Model::TRUCK_STATE_MOVING:
-        case Model::TRUCK_STATE_RAISED:
-        case Model::TRUCK_STATE_UNKNOWN:
-        default:
-            showLocked = false;
-            showUnlocked = true;
-            showMoving = (truckState == Model::TRUCK_STATE_MOVING) ? model.getFlashState() : false;
-            break;
-    }
-
-    // Update bitmap if changed
-    if(newBitmapId != previousBitmapId)
-    {
-        statusImage.invalidate();
-        previousBitmapId = newBitmapId;
-        changed = true;
-    }
-
-    // Check if visibility states changed
-    bool currentUnlocked = UNLOCKED.isVisible();
-
-    if (currentUnlocked != showUnlocked ||
-        currentLocked != showLocked ||
-        currentMoving != showMoving) {
-        changed = true;
-    }
-
-    // Update UI elements
-    UNLOCKED.setVisible(showUnlocked);
-    LOCKED.setVisible(showLocked);
-    MOVING.setVisible(showMoving);
-    // Remove ALARM.setVisible() from here - handled in updateAlarmDisplay
-
-    return changed;
+    // Show feedback
+    lastButtonPressed = 3;
+    showButtonFeedback = true;
+    buttonFeedbackStartTime = HAL_GetTick();
 }
 
-
-bool ScreenTestHomeView::updateButtonFeedbackDisplay(Model& model)
+// Optional: Add IX3212-specific display updates (for future use)
+void ScreenTestHomeView::updateIX3212Status()
 {
-    bool changed = false;
-    static bool lastShowTestText = false;
-    static const char* lastDisplayMessage = "";
-
-    // Handle button feedback timeout (3 seconds)
-    if(showButtonFeedback)
-    {
-        if(HAL_GetTick() - buttonFeedbackStartTime > 3000)
-        {
-            showButtonFeedback = false;
-            lastButtonPressed = 0;
-            isButtonHeld = false;
-            changed = true;
-        }
-    }
-
-    // Determine what message to show
-    bool showTestText = false;
-    const char* displayMessage = "";
-
-    if(showButtonFeedback && lastButtonPressed > 0)
-    {
-        // Show button feedback message
-        displayMessage = model.getButtonFeedbackMessage(lastButtonPressed, isButtonHeld);
-        showTestText = (displayMessage[0] != '\0');
-    }
-    else
-    {
-        // No button feedback active - show nothing
-        displayMessage = "";
-        showTestText = false;
-    }
-
-    // Only update display if something actually changed
-    if(showTestText != lastShowTestText ||
-       (showTestText && strcmp(displayMessage, lastDisplayMessage) != 0))
-    {
-        testtext.setVisible(showTestText);
-
-        if(showTestText && displayMessage[0] != '\0')
-        {
-            Unicode::strncpy(testtextBuffer, displayMessage, TESTTEXT_SIZE);
-        }
-        else
-        {
-            // Clear text buffer only when transitioning from visible to hidden
-            if(lastShowTestText && !showTestText)
-            {
-                testtextBuffer[0] = '\0';
-            }
-        }
-
-        lastShowTestText = showTestText;
-        lastDisplayMessage = displayMessage;
-        changed = true;
-    }
-
-    return changed;
+    // This function will be implemented when you add IX3212 integration
+    // Example:
+    // - Show PDM communication status
+    // - Display output states
+    // - Show input values
+    // - Indicate any faults
 }
 
-
-bool ScreenTestHomeView::updateLatchDisplay()
+void ScreenTestHomeView::updateTimeDisplay()
 {
-    bool changed = false;
-    static uint8_t lastLatchtest = 0;
-    static bool firstRun = true;
-
-    // Check if Latchtest state changed OR first run
-    if(Latchtest != lastLatchtest || firstRun)
-    {
-        // Simple logic: if Latchtest is 1, show "CLOSE", if 0 show "OPEN"
-        const char* latchText = (Latchtest == 1) ? "CLOSE" : "OPEN";
-
-        // Update the LATCH text area - check your .hpp file for exact buffer name
-        // Common buffer names: LATCHBuffer, textLatchBuffer, latchTextBuffer
-        Unicode::strncpy(LATCHBuffer, latchText, LATCH_SIZE - 1);
-        LATCHBuffer[LATCH_SIZE - 1] = 0;
-
-        lastLatchtest = Latchtest;
-        firstRun = false;
-        changed = true;
-    }
-
-    return changed;
+    // If you have a time display on your screen, update it here
+    // This is optional and depends on your GUI design
 }
 
-
-
+/*
+ * Helper Functions
+ */
+void ScreenTestHomeView::clearAllFeedback()
+{
+    showButtonFeedback = false;
+    hideButtonFeedback();
+    this->invalidate();
+}
