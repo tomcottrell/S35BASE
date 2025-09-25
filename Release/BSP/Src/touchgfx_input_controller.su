@@ -1,0 +1,5 @@
+../TouchGFX_App/touchgfx/framework/include/platform/driver/button/ButtonController.hpp:48:18:virtual void touchgfx::ButtonController::reset()	0	static
+../BSP/Src/touchgfx_input_controller.cpp:23:6:virtual void TouchGfxInputController::init()	0	static
+../BSP/Inc/touchgfx_input_controller.hpp:28:7:TouchGfxInputController::~TouchGfxInputController()	0	static
+../BSP/Src/touchgfx_input_controller.cpp:26:6:virtual bool TouchGfxInputController::sample(uint8_t&)	24	static
+../BSP/Inc/touchgfx_input_controller.hpp:28:7:virtual TouchGfxInputController::~TouchGfxInputController()	8	static

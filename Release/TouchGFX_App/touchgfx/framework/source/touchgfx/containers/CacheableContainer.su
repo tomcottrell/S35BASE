@@ -1,0 +1,32 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:157:22:virtual void touchgfx::CacheableContainer::CachedImage::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:42:7:touchgfx::CacheableContainer::~CacheableContainer()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:154:11:touchgfx::CacheableContainer::CachedImage::~CachedImage()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:154:11:virtual touchgfx::CacheableContainer::CachedImage::~CachedImage()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:42:7:virtual touchgfx::CacheableContainer::~CacheableContainer()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Image.hpp:118:18:virtual void touchgfx::Image::invalidateContent() const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/CacheableContainer.hpp:137:18:virtual void touchgfx::CacheableContainer::invalidateContent() const	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:77:6:virtual void touchgfx::CacheableContainer::invalidateRect(touchgfx::Rect&) const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:97:6:virtual void touchgfx::CacheableContainer::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:19:1:touchgfx::CacheableContainer::CacheableContainer()	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:28:6:void touchgfx::CacheableContainer::setCacheBitmap(touchgfx::BitmapId)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:52:10:touchgfx::BitmapId touchgfx::CacheableContainer::getCacheBitmap() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:62:6:void touchgfx::CacheableContainer::updateCache(const touchgfx::Rect&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:57:6:void touchgfx::CacheableContainer::updateCache()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:72:6:void touchgfx::CacheableContainer::enableCachedMode(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:87:6:bool touchgfx::CacheableContainer::setSolidRect(const touchgfx::Rect&) const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/CacheableContainer.cpp:92:6:bool touchgfx::CacheableContainer::isChildInvalidated() const	0	static

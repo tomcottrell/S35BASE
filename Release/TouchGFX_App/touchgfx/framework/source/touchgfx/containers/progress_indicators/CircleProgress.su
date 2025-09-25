@@ -1,0 +1,31 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:33:6:virtual void touchgfx::CircleProgress::setPainter(touchgfx::AbstractPainter&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:38:6:virtual void touchgfx::CircleProgress::setCenter(int, int)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:43:6:virtual void touchgfx::CircleProgress::getCenter(int&, int&) const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:53:5:virtual int touchgfx::CircleProgress::getRadius() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:65:5:virtual int touchgfx::CircleProgress::getLineWidth() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:85:5:virtual int touchgfx::CircleProgress::getStartAngle() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:90:5:virtual int touchgfx::CircleProgress::getEndAngle() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:48:6:virtual void touchgfx::CircleProgress::setRadius(int)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:60:6:virtual void touchgfx::CircleProgress::setLineWidth(int)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/CircleProgress.hpp:36:7:touchgfx::CircleProgress::~CircleProgress()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:72:6:virtual void touchgfx::CircleProgress::setCapPrecision(int)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:95:6:virtual void touchgfx::CircleProgress::setAlpha(uint8_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/CircleProgress.hpp:120:17:virtual int touchgfx::CircleProgress::getCapPrecision() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/CircleProgress.hpp:36:7:virtual touchgfx::CircleProgress::~CircleProgress()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:270:18:virtual void touchgfx::AbstractProgressIndicator::invalidateContent() const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:26:6:virtual void touchgfx::CircleProgress::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	32	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:331:10:void touchgfx::Circle::updateArcEnd(T) [with T = touchgfx::CWRUtil::Q5]	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:101:6:virtual void touchgfx::CircleProgress::setValue(int)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:77:6:virtual void touchgfx::CircleProgress::setStartEndAngle(int, int)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/CircleProgress.cpp:18:1:touchgfx::CircleProgress::CircleProgress()	24	static

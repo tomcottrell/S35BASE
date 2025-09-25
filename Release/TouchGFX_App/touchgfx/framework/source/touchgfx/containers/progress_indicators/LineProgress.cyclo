@@ -1,0 +1,27 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:31:6:virtual void touchgfx::LineProgress::setPainter(touchgfx::AbstractPainter&)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:43:6:virtual void touchgfx::LineProgress::getStart(int&, int&) const	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:49:6:virtual void touchgfx::LineProgress::setEnd(int, int)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:55:6:virtual void touchgfx::LineProgress::getEnd(int&, int&) const	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:66:5:virtual int touchgfx::LineProgress::getLineWidth() const	2
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:37:7:touchgfx::LineProgress::~LineProgress()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:36:6:virtual void touchgfx::LineProgress::setStart(int, int)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:61:6:virtual void touchgfx::LineProgress::setLineWidth(int)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:73:6:virtual void touchgfx::LineProgress::setLineEndingStyle(touchgfx::Line::LINE_ENDING_STYLE)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:78:25:virtual touchgfx::Line::LINE_ENDING_STYLE touchgfx::LineProgress::getLineEndingStyle() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:83:6:virtual void touchgfx::LineProgress::setAlpha(uint8_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:37:7:virtual touchgfx::LineProgress::~LineProgress()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:89:6:virtual void touchgfx::LineProgress::setValue(int)	4
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:270:18:virtual void touchgfx::AbstractProgressIndicator::invalidateContent() const	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:24:6:virtual void touchgfx::LineProgress::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/progress_indicators/LineProgress.cpp:17:1:touchgfx::LineProgress::LineProgress()	1

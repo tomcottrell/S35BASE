@@ -1,0 +1,8 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../TouchGFX_App/gui/src/home_screen/HomeView.cpp:13:6:virtual void HomeView::tearDownScreen()	0	static
+../TouchGFX_App/gui/src/home_screen/HomeView.cpp:20:6:virtual void HomeView::buttonHandler(uint8_t)	0	static
+../TouchGFX_App/gui/include/gui/home_screen/HomeView.hpp:12:11:HomeView::~HomeView()	8	static
+../TouchGFX_App/gui/include/gui/home_screen/HomeView.hpp:12:11:virtual HomeView::~HomeView()	8	static
+../TouchGFX_App/gui/src/home_screen/HomeView.cpp:3:1:HomeView::HomeView()	8	static
+../TouchGFX_App/gui/src/home_screen/HomeView.cpp:9:6:virtual void HomeView::setupScreen()	0	static
+../TouchGFX_App/gui/src/home_screen/HomeView.cpp:24:6:virtual void HomeView::handleTickEvent()	8	static

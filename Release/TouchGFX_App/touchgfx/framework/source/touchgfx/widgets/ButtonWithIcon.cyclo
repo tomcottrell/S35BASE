@@ -1,0 +1,24 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:86:18:virtual bool touchgfx::AbstractButton::getPressedState() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:158:18:virtual void touchgfx::ButtonWithIcon::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:35:7:touchgfx::ButtonWithIcon::~ButtonWithIcon()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:35:7:virtual touchgfx::ButtonWithIcon::~ButtonWithIcon()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/ButtonWithIcon.cpp:29:6:virtual void touchgfx::ButtonWithIcon::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Button.hpp:84:18:virtual void touchgfx::Button::invalidateContent() const	2
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:73:18:virtual void touchgfx::AbstractButton::executeAction()	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Types.hpp:230:10:void touchgfx::Rect::operator&=(const touchgfx::Rect&)	5
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/ButtonWithIcon.cpp:41:6:virtual void touchgfx::ButtonWithIcon::draw(const touchgfx::Rect&) const	7
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/ButtonWithIcon.cpp:20:1:touchgfx::ButtonWithIcon::ButtonWithIcon()	1

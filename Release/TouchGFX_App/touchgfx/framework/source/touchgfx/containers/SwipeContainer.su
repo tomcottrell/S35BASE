@@ -1,0 +1,52 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:100:6:virtual void touchgfx::SwipeContainer::setSwipeCutoff(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:200:11:touchgfx::SwipeContainer::PageIndicator::~PageIndicator()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:200:11:virtual touchgfx::SwipeContainer::PageIndicator::~PageIndicator()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:42:1:touchgfx::SwipeContainer::~SwipeContainer()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:42:1:virtual touchgfx::SwipeContainer::~SwipeContainer()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:165:6:virtual void touchgfx::SwipeContainer::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:230:6:virtual void touchgfx::SwipeContainer::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:43:5:touchgfx::Container::Container()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:95:6:void touchgfx::SwipeContainer::setEndSwipeElasticWidth(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:110:6:void touchgfx::SwipeContainer::setPageIndicatorXY(int16_t, int16_t)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:115:6:void touchgfx::SwipeContainer::setPageIndicatorXYWithCenteredX(int16_t, int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:121:6:void touchgfx::SwipeContainer::setPageIndicatorCenteredX()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:126:6:void touchgfx::SwipeContainer::setPageIndicatorCenteredX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:140:9:uint8_t touchgfx::SwipeContainer::getSelectedPage() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:256:6:void touchgfx::SwipeContainer::adjustPages()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:205:6:virtual void touchgfx::SwipeContainer::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:261:6:void touchgfx::SwipeContainer::animateSwipeCancelledLeft()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:283:6:void touchgfx::SwipeContainer::animateSwipeCancelledRight()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:347:1:touchgfx::SwipeContainer::PageIndicator::PageIndicator()	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:22:1:touchgfx::SwipeContainer::SwipeContainer()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:398:6:void touchgfx::SwipeContainer::PageIndicator::setCurrentPage(uint8_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:361:6:void touchgfx::SwipeContainer::PageIndicator::setNumberOfPages(uint8_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:378:6:void touchgfx::SwipeContainer::PageIndicator::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:105:6:void touchgfx::SwipeContainer::setPageIndicatorBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:388:6:void touchgfx::SwipeContainer::PageIndicator::goRight()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:305:6:void touchgfx::SwipeContainer::animateLeft()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:393:6:void touchgfx::SwipeContainer::PageIndicator::goLeft()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:326:6:void touchgfx::SwipeContainer::animateRight()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:145:6:virtual void touchgfx::SwipeContainer::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:131:6:void touchgfx::SwipeContainer::setSelectedPage(uint8_t)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:47:6:virtual void touchgfx::SwipeContainer::add(touchgfx::Drawable&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:57:6:virtual void touchgfx::SwipeContainer::remove(touchgfx::Drawable&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:408:9:uint8_t touchgfx::SwipeContainer::PageIndicator::getNumberOfPages() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SwipeContainer.cpp:413:9:uint8_t touchgfx::SwipeContainer::PageIndicator::getCurrentPage() const	0	static

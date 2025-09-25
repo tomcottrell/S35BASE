@@ -1,0 +1,35 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:71:23:virtual touchgfx::Direction touchgfx::ListLayout::getDirection() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::AdjustElements, touchgfx::Drawable&>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::ListLayout, touchgfx::Drawable&>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:37:7:touchgfx::ListLayout::~ListLayout()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::AdjustElements; T1 = touchgfx::Drawable&]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::AdjustElements; T1 = touchgfx::Drawable&]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::ListLayout; T1 = touchgfx::Drawable&]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::ListLayout; T1 = touchgfx::Drawable&]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:37:7:virtual touchgfx::ListLayout::~ListLayout()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::ListLayout, touchgfx::Drawable&>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::AdjustElements, touchgfx::Drawable&>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:62:10:void touchgfx::AdjustElements::handleRemove(touchgfx::Drawable&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:29:10:void touchgfx::AdjustElements::handleInsert(touchgfx::Drawable&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:199:6:virtual void touchgfx::ListLayout::removeAll()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:172:6:virtual void touchgfx::ListLayout::setDirection(touchgfx::Direction)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:109:6:void touchgfx::ListLayout::internalAddElementAt(touchgfx::Drawable&, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:137:6:void touchgfx::ListLayout::internalAddElement(touchgfx::Drawable&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:189:6:virtual void touchgfx::ListLayout::add(touchgfx::Drawable&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:210:6:virtual void touchgfx::ListLayout::insert(touchgfx::Drawable*, touchgfx::Drawable&)	48	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:142:6:void touchgfx::ListLayout::internalRemoveElement(touchgfx::Drawable&, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ListLayout.cpp:229:6:virtual void touchgfx::ListLayout::remove(touchgfx::Drawable&)	48	static

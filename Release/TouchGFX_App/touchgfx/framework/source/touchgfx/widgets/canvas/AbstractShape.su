@@ -1,0 +1,25 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:66:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:72:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:134:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getSolidRect() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/AbstractShape.cpp:92:6:virtual touchgfx::Rect touchgfx::AbstractShape::getMinimalRect() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:183:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator*(const touchgfx::CWRUtil::Q15&) const	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:551:16:static touchgfx::CWRUtil::Q15 touchgfx::CWRUtil::sine(int)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:598:16:static touchgfx::CWRUtil::Q15 touchgfx::CWRUtil::sine(Q5)	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:876:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::mulQ5(Q5, Q10)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/AbstractShape.cpp:19:1:touchgfx::AbstractShape::AbstractShape()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/AbstractShape.cpp:52:6:void touchgfx::AbstractShape::updateAbstractShapeCache()	56	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/AbstractShape.cpp:29:6:virtual bool touchgfx::AbstractShape::drawCanvasWidget(const touchgfx::Rect&) const	136	static

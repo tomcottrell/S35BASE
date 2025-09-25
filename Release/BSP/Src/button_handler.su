@@ -1,0 +1,5 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:144:30:virtual touchgfx::Event::EventType touchgfx::ClickEvent::getEventType() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:32:7:touchgfx::ClickEvent::~ClickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:32:7:virtual touchgfx::ClickEvent::~ClickEvent()	8	static
+../BSP/Src/button_handler.cpp:24:6:void ButtonHandler::handleKey(uint8_t)	24	static
+../BSP/Src/button_handler.cpp:36:6:bool ButtonHandler::handleTickEvent()	32	static

@@ -1,0 +1,11 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:89:18:virtual void touchgfx::AbstractPainterBitmap::setTiled(bool)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:113:18:virtual void touchgfx::AbstractPainterBitmap::setOffset(int16_t, int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.cpp:28:6:virtual void touchgfx::PainterXRGB8888Bitmap::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	56	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.hpp:36:7:touchgfx::PainterXRGB8888Bitmap::~PainterXRGB8888Bitmap()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.hpp:36:7:virtual touchgfx::PainterXRGB8888Bitmap::~PainterXRGB8888Bitmap()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.hpp:36:7:virtual void* touchgfx::PainterXRGB8888Bitmap::_ZThn8_N8touchgfx21PainterXRGB8888BitmapD1Ev()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.cpp:21:6:virtual void touchgfx::PainterXRGB8888Bitmap::setBitmap(const touchgfx::Bitmap&)	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888Bitmap.hpp:51:18:virtual bool touchgfx::PainterXRGB8888Bitmap::setup(const touchgfx::Rect&) const	16	static

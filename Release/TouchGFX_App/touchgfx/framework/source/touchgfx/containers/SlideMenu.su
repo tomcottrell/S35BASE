@@ -1,0 +1,71 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:143:6:virtual void touchgfx::SlideMenu::setExpandDirection(ExpandDirection)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:150:28:virtual touchgfx::SlideMenu::ExpandDirection touchgfx::SlideMenu::getExpandDirection() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:155:6:virtual void touchgfx::SlideMenu::setVisiblePixelsWhenCollapsed(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:162:9:virtual int16_t touchgfx::SlideMenu::getVisiblePixelsWhenCollapsed() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:167:6:virtual void touchgfx::SlideMenu::setHiddenPixelsWhenExpanded(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:174:9:virtual int16_t touchgfx::SlideMenu::getHiddenPixelsWhenExpanded() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:179:6:virtual void touchgfx::SlideMenu::setExpandedStateTimeout(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:184:10:virtual uint16_t touchgfx::SlideMenu::getExpandedStateTimeout() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:189:6:virtual void touchgfx::SlideMenu::setAnimationDuration(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:194:10:virtual uint16_t touchgfx::SlideMenu::getAnimationDuration() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:199:6:virtual void touchgfx::SlideMenu::setAnimationEasingEquation(touchgfx::EasingEquation)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:204:16:virtual int16_t (* touchgfx::SlideMenu::getAnimationEasingEquation() const)(uint16_t, int16_t, int16_t, uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:209:6:virtual void touchgfx::SlideMenu::setState(State)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:246:18:virtual touchgfx::SlideMenu::State touchgfx::SlideMenu::getState()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:251:6:virtual void touchgfx::SlideMenu::resetExpandedStateTimer()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:256:10:virtual uint16_t touchgfx::SlideMenu::getExpandedStateTimer() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:261:9:virtual int16_t touchgfx::SlideMenu::getBackgroundX() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:266:9:virtual int16_t touchgfx::SlideMenu::getBackgroundY() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:271:9:virtual int16_t touchgfx::SlideMenu::getStateChangeButtonX() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:276:9:virtual int16_t touchgfx::SlideMenu::getStateChangeButtonY() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:281:6:virtual void touchgfx::SlideMenu::setStateChangedCallback(touchgfx::GenericCallback<const touchgfx::SlideMenu&>&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:286:6:virtual void touchgfx::SlideMenu::setStateChangedAnimationEndedCallback(touchgfx::GenericCallback<const touchgfx::SlideMenu&>&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:314:6:void touchgfx::SlideMenu::stateChangeButtonClickedHandler(const touchgfx::AbstractButton&)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:342:9:virtual int16_t touchgfx::SlideMenu::getCollapsedXCoordinate()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:357:9:virtual int16_t touchgfx::SlideMenu::getCollapsedYCoordinate()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:372:9:virtual int16_t touchgfx::SlideMenu::getExpandedXCoordinate()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:387:9:virtual int16_t touchgfx::SlideMenu::getExpandedYCoordinate()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::SlideMenu, const touchgfx::MoveAnimator<touchgfx::Container>&>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::SlideMenu, const touchgfx::AbstractButton&>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:37:7:touchgfx::MoveAnimator<touchgfx::Container>::~MoveAnimator()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::SlideMenu; T1 = const touchgfx::MoveAnimator<touchgfx::Container>&]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::SlideMenu; T1 = const touchgfx::MoveAnimator<touchgfx::Container>&]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::SlideMenu; T1 = const touchgfx::AbstractButton&]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::SlideMenu; T1 = const touchgfx::AbstractButton&]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:88:18:void touchgfx::MoveAnimator<T>::setMoveAnimationDelay(uint16_t) [with T = touchgfx::Container]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:100:22:uint16_t touchgfx::MoveAnimator<T>::getMoveAnimationDelay() const [with T = touchgfx::Container]	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:304:6:virtual void touchgfx::SlideMenu::add(touchgfx::Drawable&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:309:6:virtual void touchgfx::SlideMenu::remove(touchgfx::Drawable&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:37:7:virtual touchgfx::MoveAnimator<touchgfx::Container>::~MoveAnimator()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::SlideMenu, const touchgfx::AbstractButton&>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::SlideMenu, const touchgfx::MoveAnimator<touchgfx::Container>&>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:46:1:touchgfx::SlideMenu::~SlideMenu()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:46:1:virtual touchgfx::SlideMenu::~SlideMenu()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:51:6:virtual void touchgfx::SlideMenu::setup(ExpandDirection, const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&)	64	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:331:6:void touchgfx::SlideMenu::animationEndedHandler(const touchgfx::MoveAnimator<touchgfx::Container>&)	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:291:6:virtual void touchgfx::SlideMenu::handleTickEvent()	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Types.hpp:257:10:void touchgfx::Rect::expandToFit(const touchgfx::Rect&)	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:118:6:virtual void touchgfx::SlideMenu::setup(ExpandDirection, const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&, int16_t, int16_t, int16_t, int16_t)	56	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:97:6:virtual void touchgfx::SlideMenu::setup(ExpandDirection, const touchgfx::Bitmap&, int16_t, int16_t)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:18:1:touchgfx::SlideMenu::SlideMenu()	40	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:177:10:void touchgfx::MoveAnimator<T>::nextMoveAnimationStep() [with T = touchgfx::Container]	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:169:18:void touchgfx::MoveAnimator<T>::handleTickEvent() [with T = touchgfx::Container]	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/SlideMenu.cpp:222:6:virtual void touchgfx::SlideMenu::animateToState(State)	32	static

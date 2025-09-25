@@ -1,0 +1,25 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:27:6:virtual void touchgfx::TiledImage::setOffset(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:59:6:virtual void touchgfx::TiledImage::getOffset(int16_t&, int16_t&)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:65:9:virtual int16_t touchgfx::TiledImage::getXOffset()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:70:9:virtual int16_t touchgfx::TiledImage::getYOffset()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:33:7:touchgfx::TiledImage::~TiledImage()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:20:6:virtual void touchgfx::TiledImage::setBitmap(const touchgfx::Bitmap&)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:33:6:virtual void touchgfx::TiledImage::setXOffset(int16_t)	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:46:6:virtual void touchgfx::TiledImage::setYOffset(int16_t)	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:33:7:virtual touchgfx::TiledImage::~TiledImage()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:75:6:virtual void touchgfx::TiledImage::draw(const touchgfx::Rect&) const	11
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/TiledImage.cpp:104:6:virtual touchgfx::Rect touchgfx::TiledImage::getSolidRect() const	10
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Image.hpp:118:18:virtual void touchgfx::Image::invalidateContent() const	3

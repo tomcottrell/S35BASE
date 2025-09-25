@@ -1,0 +1,56 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+../TouchGFX_App/generated/gui_generated/include/gui_generated/settings_screen/SettingsViewBase.hpp:27:18:virtual void SettingsViewBase::scrollList1UpdateItem(ScrollListContainerItem&, int16_t)	0	static
+../TouchGFX_App/generated/gui_generated/include/gui_generated/settings_screen/SettingsViewBase.hpp:36:18:virtual void SettingsViewBase::buttonHandler(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<SettingsPresenter>::~View()	0	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:105:6:virtual void SettingsViewBase::handleKeyEvent(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = ScrollListContainerItem; int SIZE = 5]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:touchgfx::Callback<SettingsViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<ScrollListContainerItem, 5>::~DrawableListItems()	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:touchgfx::ClickListener<touchgfx::ScrollList>::~ClickListener()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = SettingsViewBase; T1 = const touchgfx::AbstractButton&]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = SettingsViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:250:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = SettingsViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:260:18:bool touchgfx::Callback<dest_type, T1, T2, T3>::isValid() const [with dest_type = SettingsViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:virtual touchgfx::DrawableListItems<ScrollListContainerItem, 5>::~DrawableListItems()	8	static
+../TouchGFX_App/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<SettingsPresenter>::~View()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::ScrollList>::~ClickListener()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<SettingsViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:381:18:virtual void touchgfx::ScrollBase::initialize()	0	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:85:6:virtual void SettingsViewBase::setupScreen()	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:49:18:void touchgfx::ClickListener<T>::handleClickEvent(const touchgfx::ClickEvent&) [with T = touchgfx::ScrollList]	16	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:80:1:SettingsViewBase::~SettingsViewBase()	8	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:80:1:virtual SettingsViewBase::~SettingsViewBase()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = ScrollListContainerItem; int SIZE = 5]	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:94:6:void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:144:6:void SettingsViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:36:5:touchgfx::AbstractPainterRGB888::AbstractPainterRGB888()	16	static
+../TouchGFX_App/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp:10:1:SettingsViewBase::SettingsViewBase()	120	static

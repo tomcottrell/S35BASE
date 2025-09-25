@@ -1,0 +1,5 @@
+../Drivers/BSP/RX8900SA/rx8900sa.c:42:9:_bcd2Bin	1
+../Drivers/BSP/RX8900SA/rx8900sa.c:52:9:_bin2Bcd	1
+../Drivers/BSP/RX8900SA/rx8900sa.c:64:6:RX8900SA_Init	1
+../Drivers/BSP/RX8900SA/rx8900sa.c:73:6:RX8900SA_ReadTimeDate	5
+../Drivers/BSP/RX8900SA/rx8900sa.c:107:6:RX8900SA_WriteTimeDate	1

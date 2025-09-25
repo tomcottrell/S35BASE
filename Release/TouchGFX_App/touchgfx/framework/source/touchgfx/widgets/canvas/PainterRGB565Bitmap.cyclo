@@ -1,0 +1,11 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:89:18:virtual void touchgfx::AbstractPainterBitmap::setTiled(bool)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:113:18:virtual void touchgfx::AbstractPainterBitmap::setOffset(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp:66:34:virtual touchgfx::HAL::RenderingMethod touchgfx::PainterRGB565Bitmap::getRenderingMethod() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp:37:7:touchgfx::PainterRGB565Bitmap::~PainterRGB565Bitmap()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565Bitmap.cpp:29:6:virtual void touchgfx::PainterRGB565Bitmap::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	18
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565Bitmap.cpp:106:6:virtual void touchgfx::PainterRGB565Bitmap::tearDown() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp:37:7:virtual touchgfx::PainterRGB565Bitmap::~PainterRGB565Bitmap()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp:37:7:virtual void* touchgfx::PainterRGB565Bitmap::_ZThn8_N8touchgfx19PainterRGB565BitmapD1Ev()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565Bitmap.cpp:21:6:virtual void touchgfx::PainterRGB565Bitmap::setBitmap(const touchgfx::Bitmap&)	2
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp:52:18:virtual bool touchgfx::PainterRGB565Bitmap::setup(const touchgfx::Rect&) const	3

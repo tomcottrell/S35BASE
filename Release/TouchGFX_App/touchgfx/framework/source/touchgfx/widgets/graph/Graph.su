@@ -1,0 +1,42 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:127:17:virtual int touchgfx::AbstractDataGraph::getScaleX() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:162:17:virtual int touchgfx::AbstractDataGraph::getScaleY() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:172:18:virtual void touchgfx::AbstractDataGraph::setAlpha(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:440:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(int, int)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:446:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeX(float, float)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:478:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, int)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:484:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeXAuto(bool, float)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:507:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(int, int)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:515:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeY(float, float)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:543:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, int)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:549:18:virtual void touchgfx::AbstractDataGraph::setGraphRangeYAuto(bool, float)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:559:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinAsInt() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:569:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMinAsFloat() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:583:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMinScaled() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:593:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxAsInt() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:603:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeXMaxAsFloat() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:617:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeXMaxScaled() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:627:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinAsInt() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:637:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMinAsFloat() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:649:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMinScaled() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:659:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxAsInt() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:669:19:virtual float touchgfx::AbstractDataGraph::getGraphRangeYMaxAsFloat() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:681:17:virtual int touchgfx::AbstractDataGraph::getGraphRangeYMaxScaled() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1880:17:virtual int touchgfx::StaticDataGraph::indexToXAxis(int, int) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1887:25:virtual touchgfx::CWRUtil::Q5 touchgfx::StaticDataGraph::indexToScreenXQ5(int16_t) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1892:25:virtual touchgfx::CWRUtil::Q5 touchgfx::StaticDataGraph::indexToScreenYQ5(int16_t) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:29:7:touchgfx::GraphData::~GraphData()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/graph/Graph.cpp:18:9:virtual int16_t touchgfx::GraphData::addValue(int, int)	32	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:29:7:virtual touchgfx::GraphData::~GraphData()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1779:17:virtual int touchgfx::StaticDataGraph::indexToDataPointYScaled(int16_t) const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1763:17:virtual int touchgfx::StaticDataGraph::indexToDataPointXScaled(int16_t) const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:828:15:static touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::muldiv_toQ5(int32_t, int32_t, int32_t)	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1282:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenYQ5(int) const	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	16	static

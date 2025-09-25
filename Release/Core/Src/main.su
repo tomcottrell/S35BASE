@@ -1,0 +1,8 @@
+../Core/Src/main.c:1131:6:StartDefaultTask	8	static
+../Core/Src/main.c:1153:6:StartTouchGfx	8	static
+../Core/Src/main.c:247:6:SystemClock_Config	96	static,ignoring_inline_asm
+../Core/Src/main.c:307:6:PeriphCommonClock_Config	160	static,ignoring_inline_asm
+../Core/Src/main.c:134:5:main	120	static,ignoring_inline_asm
+../Core/Src/main.c:1113:5:__io_putchar	0	static
+../Core/Src/main.c:1175:6:HAL_TIM_PeriodElapsedCallback	0	static
+../Core/Src/main.c:1192:6:Error_Handler	0	static,ignoring_inline_asm

@@ -1,0 +1,11 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:89:18:virtual void touchgfx::AbstractPainterBitmap::setTiled(bool)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:113:18:virtual void touchgfx::AbstractPainterBitmap::setOffset(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.cpp:27:6:virtual void touchgfx::PainterRGBA2222Bitmap::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	14
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.hpp:36:7:touchgfx::PainterRGBA2222Bitmap::~PainterRGBA2222Bitmap()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.hpp:36:7:virtual touchgfx::PainterRGBA2222Bitmap::~PainterRGBA2222Bitmap()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.hpp:36:7:virtual void* touchgfx::PainterRGBA2222Bitmap::_ZThn8_N8touchgfx21PainterRGBA2222BitmapD1Ev()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.cpp:20:6:virtual void touchgfx::PainterRGBA2222Bitmap::setBitmap(const touchgfx::Bitmap&)	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGBA2222Bitmap.hpp:51:18:virtual bool touchgfx::PainterRGBA2222Bitmap::setup(const touchgfx::Rect&) const	3

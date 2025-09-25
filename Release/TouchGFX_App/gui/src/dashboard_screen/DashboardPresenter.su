@@ -1,0 +1,5 @@
+../TouchGFX_App/gui/include/gui/dashboard_screen/DashboardPresenter.hpp:28:13:DashboardPresenter::~DashboardPresenter()	0	static
+../TouchGFX_App/gui/src/dashboard_screen/DashboardPresenter.cpp:10:6:virtual void DashboardPresenter::activate()	0	static
+../TouchGFX_App/gui/include/gui/dashboard_screen/DashboardPresenter.hpp:28:13:virtual DashboardPresenter::~DashboardPresenter()	8	static
+../TouchGFX_App/gui/include/gui/dashboard_screen/DashboardPresenter.hpp:28:13:virtual void* DashboardPresenter::_ZThn4_N18DashboardPresenterD1Ev()	0	static
+../TouchGFX_App/gui/src/dashboard_screen/DashboardPresenter.cpp:4:1:DashboardPresenter::DashboardPresenter(DashboardView&)	0	static

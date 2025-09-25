@@ -1,0 +1,3 @@
+../Drivers/BSP/MX25L3233F/STM32L4R7_mx25l3233f.c:46:17:FlashDrv_SendCommand	14
+../Drivers/BSP/MX25L3233F/STM32L4R7_mx25l3233f.c:182:17:FlashDrv_ReceiveData	1
+../Drivers/BSP/MX25L3233F/STM32L4R7_mx25l3233f.c:197:17:FlashDrv_WriteData	1

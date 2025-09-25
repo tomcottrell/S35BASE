@@ -1,0 +1,8 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888.hpp:47:18:virtual void touchgfx::PainterXRGB8888::setColor(touchgfx::colortype)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterXRGB8888.cpp:18:6:virtual void touchgfx::PainterXRGB8888::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	20	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888.hpp:34:7:touchgfx::PainterXRGB8888::~PainterXRGB8888()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888.hpp:34:7:virtual touchgfx::PainterXRGB8888::~PainterXRGB8888()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterXRGB8888.hpp:34:7:virtual void* touchgfx::PainterXRGB8888::_ZThn8_N8touchgfx15PainterXRGB8888D1Ev()	0	static

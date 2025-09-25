@@ -1,0 +1,10 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:39:7:touchgfx::ScrollWheel::~ScrollWheel()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheel.cpp:17:6:virtual void touchgfx::ScrollWheel::setDrawables(touchgfx::DrawableListItemsInterface&, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:381:18:virtual void touchgfx::ScrollBase::initialize()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:39:7:virtual touchgfx::ScrollWheel::~ScrollWheel()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2

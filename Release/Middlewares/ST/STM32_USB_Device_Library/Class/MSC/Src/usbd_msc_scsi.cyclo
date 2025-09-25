@@ -1,0 +1,7 @@
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:585:6:SCSI_SenseCode.constprop	3
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:1116:15:SCSI_ProcessWrite	4
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:1067:15:SCSI_ProcessRead	4
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:1173:15:SCSI_UpdateBotData.isra	3
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:1042:15:SCSI_CheckAddressRange.isra	3
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:121:8:SCSI_ProcessCmd	70
+../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc_scsi.c:585:6:SCSI_SenseCode	3

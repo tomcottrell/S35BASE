@@ -1,0 +1,7 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp:42:13:touchgfx::PainterRGB565LinearGradient::~PainterRGB565LinearGradient()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565LinearGradient.cpp:47:17:uint16_t touchgfx::applyNoise(int, int, uint8_t, uint8_t, uint8_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565LinearGradient.cpp:65:6:virtual void touchgfx::PainterRGB565LinearGradient::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	80	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterRGB565LinearGradient.cpp:257:6:virtual void touchgfx::PainterRGB565LinearGradient::tearDown() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp:42:13:virtual touchgfx::PainterRGB565LinearGradient::~PainterRGB565LinearGradient()	8	static

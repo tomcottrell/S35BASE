@@ -1,0 +1,35 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:56:6:virtual bool touchgfx::DrawableList::getHorizontal() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:70:6:virtual bool touchgfx::DrawableList::getCircular() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:97:9:virtual int16_t touchgfx::DrawableList::getItemSize() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:102:9:virtual int16_t touchgfx::DrawableList::getDrawableSize() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:107:9:virtual int16_t touchgfx::DrawableList::getDrawableMargin() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:117:7:touchgfx::DrawableList::~DrawableList()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:117:7:virtual touchgfx::DrawableList::~DrawableList()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:17:1:touchgfx::DrawableList::DrawableList()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:75:6:void touchgfx::DrawableList::setDrawableSize(int16_t, int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:92:9:int16_t touchgfx::DrawableList::getNumberOfDrawables() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:118:9:int16_t touchgfx::DrawableList::getNumberOfItems() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:123:9:int16_t touchgfx::DrawableList::getRequiredNumberOfDrawables() const	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:145:6:void touchgfx::DrawableList::setOffset(int32_t)	48	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:271:9:int32_t touchgfx::DrawableList::getOffset() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:276:9:int16_t touchgfx::DrawableList::getItemIndex(int16_t) const	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:309:9:int16_t touchgfx::DrawableList::getDrawableIndex(int16_t, int16_t) const	20	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:294:9:int16_t touchgfx::DrawableList::getDrawableIndices(int16_t, int16_t*, int16_t) const	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:335:6:void touchgfx::DrawableList::refreshDrawables()	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:35:6:virtual void touchgfx::DrawableList::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:41:6:virtual void touchgfx::DrawableList::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:47:6:virtual void touchgfx::DrawableList::setHorizontal(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:61:6:virtual void touchgfx::DrawableList::setCircular(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:81:6:virtual void touchgfx::DrawableList::setDrawables(touchgfx::DrawableListItemsInterface&, int16_t, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	4	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:112:6:void touchgfx::DrawableList::setNumberOfItems(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/DrawableList.cpp:368:6:void touchgfx::DrawableList::itemChanged(int16_t)	24	static

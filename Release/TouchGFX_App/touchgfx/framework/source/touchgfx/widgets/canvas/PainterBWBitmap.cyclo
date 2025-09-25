@@ -1,0 +1,15 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:89:18:virtual void touchgfx::AbstractPainterBitmap::setTiled(bool)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterBitmap.hpp:113:18:virtual void touchgfx::AbstractPainterBitmap::setOffset(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterBWBitmap.hpp:37:7:touchgfx::PainterBWBitmap::~PainterBWBitmap()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterBWBitmap.hpp:37:7:virtual touchgfx::PainterBWBitmap::~PainterBWBitmap()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterBWBitmap.hpp:37:7:virtual void* touchgfx::PainterBWBitmap::_ZThn8_N8touchgfx15PainterBWBitmapD1Ev()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp:142:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterBWBitmap.cpp:19:6:virtual void touchgfx::PainterBWBitmap::setBitmap(const touchgfx::Bitmap&)	2
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterBWBitmap.hpp:52:18:virtual bool touchgfx::PainterBWBitmap::setup(const touchgfx::Rect&) const	3
+../TouchGFX_App/touchgfx/framework/include/platform/driver/lcd/LCD1bpp.hpp:264:17:uint8_t touchgfx::LCD1bpp::bwRLEdata::getNextHalfByte()	2
+../TouchGFX_App/touchgfx/framework/include/platform/driver/lcd/LCD1bpp.hpp:242:14:void touchgfx::LCD1bpp::bwRLEdata::getNextLength()	3
+../TouchGFX_App/touchgfx/framework/include/platform/driver/lcd/LCD1bpp.hpp:213:14:void touchgfx::LCD1bpp::bwRLEdata::skipNext(int32_t)	2
+../TouchGFX_App/touchgfx/framework/include/platform/driver/lcd/LCD1bpp.hpp:198:14:void touchgfx::LCD1bpp::bwRLEdata::init(const uint8_t*)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterBWBitmap.cpp:29:6:virtual void touchgfx::PainterBWBitmap::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	28

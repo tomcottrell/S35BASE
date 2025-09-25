@@ -1,0 +1,8 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../TouchGFX_App/gui/src/dashboard_screen/DashboardView.cpp:15:6:virtual void DashboardView::tearDownScreen()	1
+../TouchGFX_App/gui/src/dashboard_screen/DashboardView.cpp:22:6:virtual void DashboardView::buttonHandler(uint8_t)	1
+../TouchGFX_App/gui/include/gui/dashboard_screen/DashboardView.hpp:12:13:DashboardView::~DashboardView()	1
+../TouchGFX_App/gui/include/gui/dashboard_screen/DashboardView.hpp:12:13:virtual DashboardView::~DashboardView()	1
+../TouchGFX_App/gui/src/dashboard_screen/DashboardView.cpp:5:1:DashboardView::DashboardView()	1
+../TouchGFX_App/gui/src/dashboard_screen/DashboardView.cpp:10:6:virtual void DashboardView::setupScreen()	1
+../TouchGFX_App/gui/src/dashboard_screen/DashboardView.cpp:26:6:virtual void DashboardView::handleTickEvent()	5

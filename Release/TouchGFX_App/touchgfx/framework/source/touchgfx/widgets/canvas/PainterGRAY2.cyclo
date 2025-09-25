@@ -1,0 +1,8 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterGRAY2.hpp:48:18:virtual void touchgfx::PainterGRAY2::setColor(touchgfx::colortype)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/PainterGRAY2.cpp:18:6:virtual void touchgfx::PainterGRAY2::paint(uint8_t*, int16_t, int16_t, int16_t, int16_t, uint8_t) const	4
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterGRAY2.hpp:34:7:touchgfx::PainterGRAY2::~PainterGRAY2()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterGRAY2.hpp:34:7:virtual touchgfx::PainterGRAY2::~PainterGRAY2()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/PainterGRAY2.hpp:34:7:virtual void* touchgfx::PainterGRAY2::_ZThn8_N8touchgfx12PainterGRAY2D1Ev()	1

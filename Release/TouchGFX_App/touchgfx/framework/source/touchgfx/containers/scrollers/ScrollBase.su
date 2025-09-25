@@ -1,0 +1,46 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:176:6:virtual void touchgfx::ScrollBase::animateToItem(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:88:6:virtual void touchgfx::ScrollBase::setDrawableSize(int16_t, int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:116:9:virtual int16_t touchgfx::ScrollBase::getNumberOfItems() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:266:6:virtual void touchgfx::ScrollBase::itemChanged(int)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:271:6:virtual void touchgfx::ScrollBase::setOffset(int32_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:276:9:virtual int32_t touchgfx::ScrollBase::getOffset() const	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:311:6:virtual void touchgfx::ScrollBase::animateToPosition(int32_t, int16_t)	24	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:381:18:virtual void touchgfx::ScrollBase::initialize()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:293:9:virtual int32_t touchgfx::ScrollBase::getNearestAlignedOffset(int32_t) const	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:104:6:virtual void touchgfx::ScrollBase::setNumberOfItems(int16_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:221:6:virtual void touchgfx::ScrollBase::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:121:6:void touchgfx::ScrollBase::setEasingEquation(touchgfx::EasingEquation)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:126:6:void touchgfx::ScrollBase::setAnimationSteps(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:131:10:uint16_t touchgfx::ScrollBase::getAnimationSteps() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:136:6:void touchgfx::ScrollBase::setSwipeAcceleration(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:141:10:uint16_t touchgfx::ScrollBase::getSwipeAcceleration() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:146:6:void touchgfx::ScrollBase::setMaxSwipeItems(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:151:10:uint16_t touchgfx::ScrollBase::getMaxSwipeItems() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:156:6:void touchgfx::ScrollBase::setDragAcceleration(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:161:10:uint16_t touchgfx::ScrollBase::getDragAcceleration() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:166:6:void touchgfx::ScrollBase::allowHorizontalDrag(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:171:6:void touchgfx::ScrollBase::allowVerticalDrag(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:182:6:void touchgfx::ScrollBase::setItemSelectedCallback(touchgfx::GenericCallback<short int>&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:187:6:void touchgfx::ScrollBase::setAnimationEndedCallback(touchgfx::GenericCallback<void>&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:192:6:void touchgfx::ScrollBase::setItemPressedCallback(touchgfx::GenericCallback<short int>&)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:197:6:bool touchgfx::ScrollBase::isAnimating() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:202:6:void touchgfx::ScrollBase::stopAnimation()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:212:6:virtual void touchgfx::ScrollBase::handleDragEvent(const touchgfx::DragEvent&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:281:5:int touchgfx::ScrollBase::getNormalizedOffset(int) const	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:241:6:virtual void touchgfx::ScrollBase::handleTickEvent()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:66:6:virtual void touchgfx::ScrollBase::setHorizontal(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:20:1:touchgfx::ScrollBase::ScrollBase()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:78:6:virtual void touchgfx::ScrollBase::setCircular(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:54:6:virtual void touchgfx::ScrollBase::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:60:6:virtual void touchgfx::ScrollBase::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:73:6:virtual bool touchgfx::ScrollBase::getHorizontal() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:83:6:virtual bool touchgfx::ScrollBase::getCircular() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:94:9:virtual int16_t touchgfx::ScrollBase::getDrawableSize() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollBase.cpp:99:9:virtual int16_t touchgfx::ScrollBase::getDrawableMargin() const	0	static

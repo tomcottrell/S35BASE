@@ -1,0 +1,39 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:135:6:virtual void touchgfx::ZoomAnimationImage::setWidth(int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:142:6:virtual void touchgfx::ZoomAnimationImage::setHeight(int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:159:6:virtual void touchgfx::ZoomAnimationImage::setAlpha(uint8_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:165:9:virtual uint8_t touchgfx::ZoomAnimationImage::getAlpha() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:170:6:virtual void touchgfx::ZoomAnimationImage::setAnimationDelay(uint16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:175:10:virtual uint16_t touchgfx::ZoomAnimationImage::getAnimationDelay() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:208:6:virtual void touchgfx::ZoomAnimationImage::setCurrentState(States)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:239:6:virtual void touchgfx::ZoomAnimationImage::updateZoomAnimationDeltaXY()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ZoomAnimationImage.hpp:48:7:touchgfx::ZoomAnimationImage::~ZoomAnimationImage()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:149:6:virtual void touchgfx::ZoomAnimationImage::setScalingMode(touchgfx::ScalableImage::ScalingAlgorithm)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ZoomAnimationImage.hpp:48:7:virtual touchgfx::ZoomAnimationImage::~ZoomAnimationImage()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:154:33:virtual touchgfx::ScalableImage::ScalingAlgorithm touchgfx::ZoomAnimationImage::getScalingMode()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/ZoomAnimationImage.hpp:263:18:virtual void touchgfx::ZoomAnimationImage::invalidateContent() const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:185:6:virtual void touchgfx::ZoomAnimationImage::updateRenderingMethod()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:18:1:touchgfx::ZoomAnimationImage::ZoomAnimationImage()	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:76:6:void touchgfx::ZoomAnimationImage::cancelZoomAnimation()	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:82:6:virtual void touchgfx::ZoomAnimationImage::handleTickEvent()	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:125:6:void touchgfx::ZoomAnimationImage::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:180:6:bool touchgfx::ZoomAnimationImage::isZoomAnimationRunning() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:214:6:void touchgfx::ZoomAnimationImage::startTimerAndSetParameters(int16_t, int16_t, uint16_t, ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:56:6:void touchgfx::ZoomAnimationImage::startZoomAnimation(int16_t, int16_t, uint16_t, ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation)	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/ZoomAnimationImage.cpp:63:6:void touchgfx::ZoomAnimationImage::startZoomAndMoveAnimation(int16_t, int16_t, int16_t, int16_t, uint16_t, ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation, touchgfx::EasingEquation, touchgfx::EasingEquation)	32	static

@@ -1,0 +1,34 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:64:18:virtual void touchgfx::CWRVectorRenderer::setMode(touchgfx::VectorRenderer::DrawMode)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:69:18:virtual void touchgfx::CWRVectorRenderer::setStrokeMiterLimit(float)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:74:18:virtual void touchgfx::CWRVectorRenderer::setStrokeLineJoin(touchgfx::VGStrokeLineJoin)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:79:18:virtual void touchgfx::CWRVectorRenderer::setStrokeLineCap(touchgfx::VGStrokeLineCap)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:37:6:virtual void touchgfx::CWRVectorRenderer::tearDown()	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:403:6:virtual void touchgfx::CWRVectorRenderer::setStrokeWidth(float)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:408:6:virtual void touchgfx::CWRVectorRenderer::setColor(touchgfx::colortype)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:417:6:virtual void touchgfx::CWRVectorRenderer::setAlpha(uint8_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:449:6:virtual void touchgfx::CWRVectorRenderer::setTransformationMatrix(const touchgfx::Matrix3x3&)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:422:6:virtual void touchgfx::CWRVectorRenderer::setLinearGradient(float, float, float, float, uint32_t, const float*, const uint32_t*, float, float, bool, const uint32_t*)	12
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:18:6:virtual void touchgfx::CWRVectorRenderer::setup(const touchgfx::Widget&, const touchgfx::Rect&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:116:10:void touchgfx::Canvas::quadraticBezierTo(float, float, float, float, float, float)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:134:10:void touchgfx::Canvas::cubicBezierTo(float, float, float, float, float, float, float, float)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:282:14:void touchgfx::CWRVectorRenderer::StrokeCanvas::moveToWithTransform(float, float)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:288:14:void touchgfx::CWRVectorRenderer::StrokeCanvas::lineToWithTransform(float, float)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:339:6:void touchgfx::CWRVectorRenderer::getPreviousDestination(float&, float&, uint32_t, uint32_t, const uint8_t*, const float*) const	13
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:454:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::strokeMoveTo(float, float)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:528:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::lineCapInsteadOfLineJoin(bool)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:576:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::strokeDrawLineJoinRound(float, float, float, float, float, float, int)	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:538:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::strokeDrawLineJoin(float, float, float, float, float, float, float, float, float, float)	6
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:606:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::strokeDrawLineCap(float, float, float, float)	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:462:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::strokeLineTo(float, float)	4
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:276:22:virtual void touchgfx::CWRVectorRenderer::StrokeCanvas::lineTo(touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:514:6:bool touchgfx::CWRVectorRenderer::StrokeCanvas::strokeDrawDoubleLineCap()	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:503:6:bool touchgfx::CWRVectorRenderer::StrokeCanvas::strokeClose(float, float)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:533:6:void touchgfx::CWRVectorRenderer::StrokeCanvas::drawFinalLineCap()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:283:6:void touchgfx::CWRVectorRenderer::drawStrokeBackwards(uint32_t, uint32_t, uint32_t, const uint8_t*, const float*, bool, StrokeCanvas&) const	9
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:172:10:void touchgfx::Canvas::lineTo(T, T) [with T = float]	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:203:11:touchgfx::CWRVectorRenderer::StrokeCanvas::~StrokeCanvas()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:171:6:bool touchgfx::CWRVectorRenderer::drawStroke(const uint8_t*, uint32_t, const float*, uint32_t, const touchgfx::Rect&) const	17
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:203:11:virtual touchgfx::CWRVectorRenderer::StrokeCanvas::~StrokeCanvas()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:89:6:bool touchgfx::CWRVectorRenderer::drawFill(const uint8_t*, uint32_t, const float*, uint32_t, const touchgfx::Rect&) const	9
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:77:6:bool touchgfx::CWRVectorRenderer::drawPathArea(const uint8_t*, uint32_t, const float*, uint32_t, const touchgfx::Rect&) const	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/canvas/CWRVectorRenderer.cpp:48:6:virtual void touchgfx::CWRVectorRenderer::drawPath(const uint8_t*, uint32_t, const float*, uint32_t, const float*)	7

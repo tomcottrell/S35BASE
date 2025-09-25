@@ -1,0 +1,35 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:74:18:virtual void touchgfx::Gauge::getCenter(int&, int&) const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:37:6:virtual void touchgfx::Gauge::setWidth(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:44:6:virtual void touchgfx::Gauge::setHeight(int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:97:5:virtual int touchgfx::Gauge::getStartAngle() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:102:5:virtual int touchgfx::Gauge::getEndAngle() const	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:173:6:virtual void touchgfx::Gauge::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	0	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:35:7:touchgfx::Gauge::~Gauge()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:155:6:virtual void touchgfx::Gauge::setAlpha(uint8_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:35:7:virtual touchgfx::Gauge::~Gauge()	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:189:18:virtual void touchgfx::Gauge::invalidateContent() const	8	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:413:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:216:18:virtual void touchgfx::TextureMapper::updateZAngle(float)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:18:1:touchgfx::Gauge::Gauge()	32	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:51:6:void touchgfx::Gauge::setBackgroundOffset(int16_t, int16_t)	8	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:64:6:void touchgfx::Gauge::setArcPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:78:6:void touchgfx::Gauge::setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::RenderingAlgorithm)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:83:6:void touchgfx::Gauge::setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::RenderingAlgorithm)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:107:6:void touchgfx::Gauge::setArcVisible(bool)	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:112:6:void touchgfx::Gauge::putArcOnTop(bool)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:126:9:touchgfx::Circle& touchgfx::Gauge::getArc()	0	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:162:6:void touchgfx::Gauge::setupNeedleTextureMapper()	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:70:6:void touchgfx::Gauge::setNeedle(touchgfx::BitmapId, int16_t, int16_t)	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:56:6:virtual void touchgfx::Gauge::setCenter(int, int)	16	static
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:331:10:void touchgfx::Circle::updateArcEnd(T) [with T = int]	24	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:131:6:virtual void touchgfx::Gauge::setValue(int)	16	static
+../TouchGFX_App/touchgfx/framework/source/touchgfx/widgets/Gauge.cpp:88:6:virtual void touchgfx::Gauge::setStartEndAngle(int, int)	8	static

@@ -1,0 +1,8 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../TouchGFX_App/gui/src/statistics_screen/StatisticsView.cpp:14:6:virtual void StatisticsView::tearDownScreen()	0	static
+../TouchGFX_App/gui/src/statistics_screen/StatisticsView.cpp:21:6:virtual void StatisticsView::buttonHandler(uint8_t)	0	static
+../TouchGFX_App/gui/include/gui/statistics_screen/StatisticsView.hpp:12:13:StatisticsView::~StatisticsView()	8	static
+../TouchGFX_App/gui/include/gui/statistics_screen/StatisticsView.hpp:12:13:virtual StatisticsView::~StatisticsView()	8	static
+../TouchGFX_App/gui/src/statistics_screen/StatisticsView.cpp:5:1:StatisticsView::StatisticsView()	8	static
+../TouchGFX_App/gui/src/statistics_screen/StatisticsView.cpp:10:6:virtual void StatisticsView::setupScreen()	0	static
+../TouchGFX_App/gui/src/statistics_screen/StatisticsView.cpp:25:6:virtual void StatisticsView::handleTickEvent()	24	static

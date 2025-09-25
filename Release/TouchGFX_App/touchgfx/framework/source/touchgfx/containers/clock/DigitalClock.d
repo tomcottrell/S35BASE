@@ -1,0 +1,42 @@
+TouchGFX_App/touchgfx/framework/source/touchgfx/containers/clock/DigitalClock.o: \
+ ../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/clock/DigitalClock.cpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Unicode.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Types.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Config.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Event.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/events/DragEvent.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Font.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/Texts.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/TextProvider.hpp \
+ ../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Unicode.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Types.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/hal/Config.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Callback.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Bitmap.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/ClickEvent.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Event.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/DragEvent.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/events/GestureEvent.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/TypedText.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Font.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Texts.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/TextProvider.hpp:
+../TouchGFX_App/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:

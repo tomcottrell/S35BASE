@@ -1,0 +1,20 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:27:6:virtual void touchgfx::ScrollWheelBase::setSelectedItemOffset(int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:34:9:virtual int16_t touchgfx::ScrollWheelBase::getSelectedItemOffset() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:39:9:virtual int32_t touchgfx::ScrollWheelBase::getPositionForItem(int16_t)	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:84:9:virtual int32_t touchgfx::ScrollWheelBase::keepOffsetInsideLimits(int32_t, int16_t) const	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:145:6:virtual void touchgfx::ScrollWheelBase::handleDragEvent(const touchgfx::DragEvent&)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:153:6:virtual void touchgfx::ScrollWheelBase::handleGestureEvent(const touchgfx::GestureEvent&)	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:41:7:touchgfx::ScrollWheelBase::~ScrollWheelBase()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:381:18:virtual void touchgfx::ScrollBase::initialize()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:41:7:virtual touchgfx::ScrollWheelBase::~ScrollWheelBase()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:55:6:virtual void touchgfx::ScrollWheelBase::animateToPosition(int32_t, int16_t)	5
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:19:1:touchgfx::ScrollWheelBase::ScrollWheelBase()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:70:5:int touchgfx::ScrollWheelBase::getSelectedItem() const	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:95:6:virtual void touchgfx::ScrollWheelBase::handleClickEvent(const touchgfx::ClickEvent&)	13
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollWheelBase.cpp:168:6:void touchgfx::ScrollWheelBase::setAnimateToCallback(touchgfx::GenericCallback<short int>&)	1

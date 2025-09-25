@@ -1,0 +1,24 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:174:6:virtual void touchgfx::ScrollList::handleClickEvent(const touchgfx::ClickEvent&)	17
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:247:9:virtual int32_t touchgfx::ScrollList::keepOffsetInsideLimits(int32_t, int16_t) const	3
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:35:7:touchgfx::ScrollList::~ScrollList()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:50:6:virtual void touchgfx::ScrollList::setDrawables(touchgfx::DrawableListItemsInterface&, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:381:18:virtual void touchgfx::ScrollBase::initialize()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:104:9:virtual int32_t touchgfx::ScrollList::getPositionForItem(int16_t)	12
+../TouchGFX_App/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:35:7:virtual touchgfx::ScrollList::~ScrollList()	1
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:236:9:virtual int32_t touchgfx::ScrollList::getNearestAlignedOffset(int32_t) const	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:18:1:touchgfx::ScrollList::ScrollList()	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:58:6:void touchgfx::ScrollList::setWindowSize(int16_t)	3
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:35:6:virtual void touchgfx::ScrollList::setHeight(int16_t)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:44:6:virtual void touchgfx::ScrollList::setDrawableSize(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:26:6:virtual void touchgfx::ScrollList::setWidth(int16_t)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:71:6:void touchgfx::ScrollList::setPadding(int16_t, int16_t)	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:80:9:int16_t touchgfx::ScrollList::getPaddingBefore() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:85:9:int16_t touchgfx::ScrollList::getPaddingAfter() const	1
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:90:6:void touchgfx::ScrollList::setSnapping(bool)	2
+../TouchGFX_App/touchgfx/framework/source/touchgfx/containers/scrollers/ScrollList.cpp:99:6:bool touchgfx::ScrollList::getSnapping() const	1

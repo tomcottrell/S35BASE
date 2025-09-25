@@ -1,0 +1,10 @@
+../TouchGFX_App/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:16:6:virtual void SettingsView::tearDownScreen()	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:20:6:virtual void SettingsView::scrollList1UpdateItem(ScrollListContainerItem&, int16_t)	1
+../TouchGFX_App/gui/include/gui/settings_screen/SettingsView.hpp:12:13:SettingsView::~SettingsView()	1
+../TouchGFX_App/gui/include/gui/settings_screen/SettingsView.hpp:12:13:virtual SettingsView::~SettingsView()	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:3:1:SettingsView::SettingsView()	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:26:9:uint8_t SettingsView::getValidIndex(uint8_t)	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:10:6:virtual void SettingsView::setupScreen()	1
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:78:6:virtual void SettingsView::handleTickEvent()	2
+../TouchGFX_App/gui/src/settings_screen/SettingsView.cpp:37:6:virtual void SettingsView::buttonHandler(uint8_t)	6
