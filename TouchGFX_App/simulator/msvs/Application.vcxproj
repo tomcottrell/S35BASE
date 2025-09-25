@@ -23,8 +23,6 @@
     <ClCompile Include="..\..\gui\src\containers\ScrollListContainerItem.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\ScrollListContainerItemBase.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
-    <ClCompile Include="..\..\gui\src\screenoutputstest_screen\ScreenOutputsTestView.cpp"/>
-    <ClCompile Include="..\..\gui\src\screenlcdtest_screen\ScreenLCDtestView.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\ALARM.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\ALARMBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\MenuItemContainer.cpp"/>
@@ -219,8 +217,6 @@
     <ClInclude Include="..\..\gui\include\gui\diagnostic_screen\DiagnosticPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\diagnostic_screen\DiagnosticView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\diagnostic_screen\DiagnosticViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screentrailer_screen\ScreenTrailerPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screentrailer_screen\ScreenTrailerView.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\passwordentry_screen\PasswordEntryPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\passwordentry_screen\PasswordEntryView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\passwordentry_screen\PasswordEntryViewBase.hpp"/>

@@ -184,17 +184,11 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>5363A1A0-473E-89AE-EEA5-6503B52D7125</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screenoutputstest_screen">
-      <UniqueIdentifier>FCB10590-F4DF-A899-5860-55C18EDDE17F</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\screenoutputstest_screen">
       <UniqueIdentifier>CEFD8C8D-EBC8-1C5F-2BBE-7DFD1F808331</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\screenlcdtest_screen">
       <UniqueIdentifier>A8C9BD76-F4E5-27CC-BBD8-7779E41E09C2</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\screenlcdtest_screen">
-      <UniqueIdentifier>22E4C65E-085A-45E5-2CA0-54AABB60678D</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\menulayer3_screen">
       <UniqueIdentifier>87FC0229-433A-65C6-3582-F5DCFDF344D5</UniqueIdentifier>
@@ -243,9 +237,6 @@
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\diagnostic_screen">
       <UniqueIdentifier>B1E39549-0F01-979A-50F6-34C00231983C</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screentrailer_screen">
-      <UniqueIdentifier>EE9E6A34-DABA-5CEC-293D-F313E3F67E56</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\passwordentry_screen">
       <UniqueIdentifier>CA7AF366-EC4F-6D6E-2718-F2BC91112224</UniqueIdentifier>
@@ -308,12 +299,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screenoutputstest_screen\ScreenOutputsTestView.cpp">
-      <Filter>Source Files\gui\screenoutputstest_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screenlcdtest_screen\ScreenLCDtestView.cpp">
-      <Filter>Source Files\gui\screenlcdtest_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\ALARM.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -888,12 +873,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\diagnostic_screen\DiagnosticViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\diagnostic_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screentrailer_screen\ScreenTrailerPresenter.hpp">
-      <Filter>Header Files\gui\screentrailer_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screentrailer_screen\ScreenTrailerView.hpp">
-      <Filter>Header Files\gui\screentrailer_screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\passwordentry_screen\PasswordEntryPresenter.hpp">
       <Filter>Header Files\gui\passwordentry_screen</Filter>

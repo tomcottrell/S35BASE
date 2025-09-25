@@ -656,7 +656,7 @@
             "Type": "BoxWithBorder",
             "Name": "boxWithBorder1",
             "X": 9,
-            "Y": 92,
+            "Y": 90,
             "Width": 304,
             "Height": 119,
             "Color": {
@@ -791,55 +791,11 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Inclo",
-            "X": 12,
-            "Y": 160,
-            "Width": 39,
-            "Height": 22,
-            "TextId": "__SingleUse_SDL8",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "param",
             "X": 12,
             "Y": 90,
             "Height": 22,
             "TextId": "__SingleUse_IYKH",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "truck",
-            "X": 113,
-            "Y": 92,
-            "Width": 37,
-            "Height": 22,
-            "TextId": "__SingleUse_CTSB",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "trailer",
-            "X": 210,
-            "Y": 92,
-            "Width": 41,
-            "Height": 22,
-            "TextId": "__SingleUse_J2RQ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "HydPress",
-            "X": 12,
-            "Y": 113,
-            "Width": 70,
-            "Height": 22,
-            "TextId": "__SingleUse_ENWZ",
             "TextRotation": "0",
             "AutoSize": true
           },
@@ -860,124 +816,12 @@
             "Height": 2
           },
           {
-            "Type": "TextArea",
-            "Name": "Latch",
-            "X": 13,
-            "Y": 137,
-            "Width": 37,
-            "Height": 22,
-            "TextId": "__SingleUse_5YCL",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "EStop",
-            "X": 12,
-            "Y": 184,
-            "Width": 41,
-            "Height": 22,
-            "TextId": "__SingleUse_DD70",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
             "Type": "Box",
             "Name": "box7_1_1_1",
             "X": 9,
             "Y": 184,
             "Width": 301,
             "Height": 2
-          },
-          {
-            "Type": "TextArea",
-            "Name": "Inclotxt",
-            "X": 164,
-            "Y": 160,
-            "Width": 87,
-            "Height": 25,
-            "TextId": "__SingleUse_W1ZF",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_KFHC",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "HydPresstxt",
-            "X": 113,
-            "Y": 116,
-            "Width": 100,
-            "Height": 23,
-            "TextId": "__SingleUse_EGUK",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_QUFX",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "Latchtxt",
-            "X": 113,
-            "Y": 138,
-            "Width": 92,
-            "Height": 23,
-            "TextId": "__SingleUse_22VR",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_RNFU",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "Latchtxt_trailer",
-            "X": 210,
-            "Y": 138,
-            "Width": 99,
-            "Height": 23,
-            "TextId": "__SingleUse_BQWI",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_QS83",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "HydPresstxt_trailer",
-            "X": 210,
-            "Y": 116,
-            "Width": 100,
-            "Height": 23,
-            "TextId": "__SingleUse_TJ3D",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_D8BX",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "EStoptxt",
-            "X": 146,
-            "Y": 184,
-            "Width": 122,
-            "Height": 23,
-            "TextId": "__SingleUse_L3ZN",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_KRNC",
-              "UseBuffer": true,
-              "BufferSize": 25
-            }
           },
           {
             "Type": "ScalableImage",

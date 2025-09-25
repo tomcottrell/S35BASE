@@ -55,10 +55,6 @@ uint16_t  REGEN_BUTTON_PRESSED_TIME = 1500;		//mS.  Time button high-light colou
 uint16_t can_rx_timer;
 uint16_t can_tx_timer;
 uint16_t can_tx_timer2;
-uint16_t can_tx_timer3;
-uint16_t can_tx_timer4;
-uint16_t can_tx_timer5;
-uint16_t can_tx_timer6;
 
 uint16_t lcd_heater_timer;
 uint16_t lcd_heater_PWM_timer;
@@ -80,10 +76,6 @@ void initialise_timers()
 	can_rx_timer = 0;
 	can_tx_timer = 0;
 	can_tx_timer2 = 0;
-	can_tx_timer3 = 0;
-	can_tx_timer4 = 0;
-	can_tx_timer5 = 0;
-	can_tx_timer6 = 0;
 	lcd_heater_timer = 1000;
 	lcd_heater_PWM_timer = 0;
 }
@@ -112,22 +104,6 @@ void update_tick_timers()
 	//CAN TX timer 2
 	if(can_tx_timer2 != 0)
 			--can_tx_timer2;
-
-	//CAN TX timer 3
-	if(can_tx_timer3 != 0)
-			--can_tx_timer3;
-
-	//CAN TX timer 4
-	if(can_tx_timer4 != 0)
-			--can_tx_timer4;
-
-	//CAN TX timer 5
-	if(can_tx_timer5 != 0)
-			--can_tx_timer5;
-
-	//CAN TX timer 6
-	if(can_tx_timer6 != 0)
-			--can_tx_timer6;
 
 	if(lcd_heater_timer != 0)
 		--lcd_heater_timer;

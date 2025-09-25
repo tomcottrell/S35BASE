@@ -20,7 +20,7 @@ DiagnosticViewBase::DiagnosticViewBase()
     test.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_320X240_POLY_ID));
     add(test);
 
-    boxWithBorder1.setPosition(9, 92, 304, 119);
+    boxWithBorder1.setPosition(9, 90, 304, 119);
     boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(232, 232, 232));
     boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     boxWithBorder1.setBorderSize(2);
@@ -84,35 +84,11 @@ DiagnosticViewBase::DiagnosticViewBase()
     box7_2_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(box7_2_2);
 
-    Inclo.setXY(12, 160);
-    Inclo.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Inclo.setLinespacing(0);
-    Inclo.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SDL8));
-    add(Inclo);
-
     param.setXY(12, 90);
     param.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     param.setLinespacing(0);
     param.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IYKH));
     add(param);
-
-    truck.setXY(113, 92);
-    truck.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    truck.setLinespacing(0);
-    truck.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CTSB));
-    add(truck);
-
-    trailer.setXY(210, 92);
-    trailer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    trailer.setLinespacing(0);
-    trailer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J2RQ));
-    add(trailer);
-
-    HydPress.setXY(12, 113);
-    HydPress.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    HydPress.setLinespacing(0);
-    HydPress.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ENWZ));
-    add(HydPress);
 
     box7_1.setPosition(9, 138, 301, 2);
     box7_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -122,69 +98,9 @@ DiagnosticViewBase::DiagnosticViewBase()
     box7_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(box7_1_1);
 
-    Latch.setXY(13, 137);
-    Latch.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Latch.setLinespacing(0);
-    Latch.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5YCL));
-    add(Latch);
-
-    EStop.setXY(12, 184);
-    EStop.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    EStop.setLinespacing(0);
-    EStop.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DD70));
-    add(EStop);
-
     box7_1_1_1.setPosition(9, 184, 301, 2);
     box7_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(box7_1_1_1);
-
-    Inclotxt.setPosition(164, 160, 87, 25);
-    Inclotxt.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Inclotxt.setLinespacing(0);
-    Unicode::snprintf(InclotxtBuffer, INCLOTXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KFHC).getText());
-    Inclotxt.setWildcard(InclotxtBuffer);
-    Inclotxt.setTypedText(touchgfx::TypedText(T___SINGLEUSE_W1ZF));
-    add(Inclotxt);
-
-    HydPresstxt.setPosition(113, 116, 100, 23);
-    HydPresstxt.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    HydPresstxt.setLinespacing(0);
-    Unicode::snprintf(HydPresstxtBuffer, HYDPRESSTXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_QUFX).getText());
-    HydPresstxt.setWildcard(HydPresstxtBuffer);
-    HydPresstxt.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EGUK));
-    add(HydPresstxt);
-
-    Latchtxt.setPosition(113, 138, 92, 23);
-    Latchtxt.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Latchtxt.setLinespacing(0);
-    Unicode::snprintf(LatchtxtBuffer, LATCHTXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_RNFU).getText());
-    Latchtxt.setWildcard(LatchtxtBuffer);
-    Latchtxt.setTypedText(touchgfx::TypedText(T___SINGLEUSE_22VR));
-    add(Latchtxt);
-
-    Latchtxt_trailer.setPosition(210, 138, 99, 23);
-    Latchtxt_trailer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Latchtxt_trailer.setLinespacing(0);
-    Unicode::snprintf(Latchtxt_trailerBuffer, LATCHTXT_TRAILER_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_QS83).getText());
-    Latchtxt_trailer.setWildcard(Latchtxt_trailerBuffer);
-    Latchtxt_trailer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BQWI));
-    add(Latchtxt_trailer);
-
-    HydPresstxt_trailer.setPosition(210, 116, 100, 23);
-    HydPresstxt_trailer.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    HydPresstxt_trailer.setLinespacing(0);
-    Unicode::snprintf(HydPresstxt_trailerBuffer, HYDPRESSTXT_TRAILER_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_D8BX).getText());
-    HydPresstxt_trailer.setWildcard(HydPresstxt_trailerBuffer);
-    HydPresstxt_trailer.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TJ3D));
-    add(HydPresstxt_trailer);
-
-    EStoptxt.setPosition(146, 184, 122, 23);
-    EStoptxt.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    EStoptxt.setLinespacing(0);
-    Unicode::snprintf(EStoptxtBuffer, ESTOPTXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KRNC).getText());
-    EStoptxt.setWildcard(EStoptxtBuffer);
-    EStoptxt.setTypedText(touchgfx::TypedText(T___SINGLEUSE_L3ZN));
-    add(EStoptxt);
 
     scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_NAVIGATION_EAST_50_50_000000_SVG_ID));
     scalableImage2.setPosition(20, 215, 37, 27);

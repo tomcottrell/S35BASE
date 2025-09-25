@@ -46,22 +46,10 @@ protected:
     touchgfx::Box box7;
     touchgfx::Box box7_2;
     touchgfx::Box box7_2_2;
-    touchgfx::TextArea Inclo;
     touchgfx::TextArea param;
-    touchgfx::TextArea truck;
-    touchgfx::TextArea trailer;
-    touchgfx::TextArea HydPress;
     touchgfx::Box box7_1;
     touchgfx::Box box7_1_1;
-    touchgfx::TextArea Latch;
-    touchgfx::TextArea EStop;
     touchgfx::Box box7_1_1_1;
-    touchgfx::TextAreaWithOneWildcard Inclotxt;
-    touchgfx::TextAreaWithOneWildcard HydPresstxt;
-    touchgfx::TextAreaWithOneWildcard Latchtxt;
-    touchgfx::TextAreaWithOneWildcard Latchtxt_trailer;
-    touchgfx::TextAreaWithOneWildcard HydPresstxt_trailer;
-    touchgfx::TextAreaWithOneWildcard EStoptxt;
     touchgfx::ScalableImage scalableImage2;
 
     /*
@@ -69,18 +57,6 @@ protected:
      */
     static const uint16_t LATCH_SIZE = 10;
     touchgfx::Unicode::UnicodeChar LATCHBuffer[LATCH_SIZE];
-    static const uint16_t INCLOTXT_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar InclotxtBuffer[INCLOTXT_SIZE];
-    static const uint16_t HYDPRESSTXT_SIZE = 25;
-    touchgfx::Unicode::UnicodeChar HydPresstxtBuffer[HYDPRESSTXT_SIZE];
-    static const uint16_t LATCHTXT_SIZE = 25;
-    touchgfx::Unicode::UnicodeChar LatchtxtBuffer[LATCHTXT_SIZE];
-    static const uint16_t LATCHTXT_TRAILER_SIZE = 25;
-    touchgfx::Unicode::UnicodeChar Latchtxt_trailerBuffer[LATCHTXT_TRAILER_SIZE];
-    static const uint16_t HYDPRESSTXT_TRAILER_SIZE = 25;
-    touchgfx::Unicode::UnicodeChar HydPresstxt_trailerBuffer[HYDPRESSTXT_TRAILER_SIZE];
-    static const uint16_t ESTOPTXT_SIZE = 25;
-    touchgfx::Unicode::UnicodeChar EStoptxtBuffer[ESTOPTXT_SIZE];
 
 private:
 

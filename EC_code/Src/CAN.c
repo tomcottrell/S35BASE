@@ -74,39 +74,6 @@ uint16_t j1939EngineSpeed;
 uint16_t j1939EngineOilPressure;
 int16_t j1939EngineCoolantTemp;
 uint16_t j1939EngineLoad;
-uint16_t j1939Pitch;
-uint16_t j1939Roll;
-
-//MC2
-uint16_t j1939PTOStatus;
-uint16_t j1939EStopStatus;
-
-uint16_t j1939Truck_Latched;
-uint16_t j1939Truck_Lowered;
-uint16_t j1939Truck_Moving;
-uint16_t j1939Truck_Raised;
-uint16_t j1939PTO_Disabled;
-uint16_t j1939EStop_Active;
-uint16_t j1939Angle_Exceeded;
-uint16_t j1939Truck_Press;
-uint16_t j1939TruckProximity;
-uint16_t j1939Trailer_Latched;
-uint16_t j1939Trailer_Lowered;
-uint16_t j1939Trailer_Moving;
-uint16_t j1939Trailer_Raised;
-uint16_t j1939Trailer_Press;
-uint16_t j1939TrailerProximity;
-uint16_t j1939Overpressure;
-
-uint8_t Raisetest; //added
-uint8_t Lowertest;
-uint8_t Latchtest;
-uint8_t Traystate;
-
-uint8_t TrailerRaisetest = 0;
-uint8_t TrailerLowertest = 0;
-uint8_t TrailerLatchtest = 0;
-uint8_t TrailerTraystate = 0;
 
 // In your CAN variables section, add a flag
 volatile uint8_t can_data_updated = 0;
@@ -182,15 +149,14 @@ void CAN_transmit_coms()
 
      		clear_CAN_tx_data();
 
-     		//can_tx_data[0] = 0x01;	// Byte 1: 0x01 as requested
-     		can_tx_data[0] = Raisetest;	// Byte 1: 0x01 as requested
-     		can_tx_data[1] = Lowertest;	// Byte 2: 0x01 as requested
-     		can_tx_data[2] = Latchtest;
-     		can_tx_data[3] = Traystate;
-     		can_tx_data[4] = TrailerRaisetest;
-     		can_tx_data[5] = TrailerLowertest;
-     		can_tx_data[6] = TrailerLatchtest;
-     		can_tx_data[7] = TrailerTraystate;
+     		can_tx_data[0] = 0x02; // Byte 1: 0x01 as requested
+     		can_tx_data[1] = 0x03; // Byte 2: 0x01 as requested
+     		can_tx_data[2] = 0x04;
+     		can_tx_data[3] = 0x05;
+     		can_tx_data[4] = 0x06;
+     		can_tx_data[5] = 0x07;
+     		can_tx_data[6] = 0x08;
+     		can_tx_data[7] = 0x09;
 
      		if (HAL_CAN_AddTxMessage(&hcan1, &CAN_tx_header, can_tx_data, &CAN_tx_mailbox) != HAL_OK)
      		{
@@ -202,151 +168,6 @@ void CAN_transmit_coms()
      			++can_tx_count;
      		}
      	 }
-         // NEW: TouchGFX Settings transmission - PGN 65522 (0xFFF2) at 1000ms rate
-         if(can_tx_timer3 == 0 && HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 0)
-         {
-             can_tx_timer3 = 1000;
-
-             CAN_tx_header.IDE=CAN_ID_EXT;
-             CAN_tx_header.DLC=8;
-             CAN_tx_header.RTR=CAN_RTR_DATA;
-             // PGN 65522 (0xFFF2) with source address
-             CAN_tx_header.ExtId=0x18FFF200 + CAN_SOURCE_ADDRESS;
-
-             clear_CAN_tx_data();
-
-             // Byte 0: Vehicle Type (single byte, max value is 1)
-             can_tx_data[0] = (uint8_t)S35_config[TOUCHGFX_VEHICLETYPE];
-
-             // Byte 1-2: Truck Max (2 bytes, default 400)
-             can_tx_data[1] = (uint8_t)(S35_config[TOUCHGFX_TRUCKMAX] & 0xFF);        // Low byte
-             can_tx_data[2] = (uint8_t)((S35_config[TOUCHGFX_TRUCKMAX] >> 8) & 0xFF); // High byte
-
-             // Byte 3: Truck Min (single byte, max value 100)
-             can_tx_data[3] = (uint8_t)S35_config[TOUCHGFX_TRUCKMIN];
-
-             // Byte 4-5: Trailer Max (2 bytes, default 400)
-             can_tx_data[4] = (uint8_t)(S35_config[TOUCHGFX_TRAILERMAX] & 0xFF);        // Low byte
-             can_tx_data[5] = (uint8_t)((S35_config[TOUCHGFX_TRAILERMAX] >> 8) & 0xFF); // High byte
-
-             // Byte 6: Trailer Min (single byte, max value 100)
-             can_tx_data[6] = (uint8_t)S35_config[TOUCHGFX_TRAILERMIN];
-
-             // Byte 7: Reserved for future use
-             can_tx_data[7] = 0xFF;
-
-             if (HAL_CAN_AddTxMessage(&hcan1, &CAN_tx_header, can_tx_data, &CAN_tx_mailbox) != HAL_OK)
-             {
-                 //Error_Handler ();
-             }
-             else
-             {
-                 ++can_tx_count;
-             }
-         }
-
-         // NEW: Pressure Settings transmission - PGN 65523 (0xFFF3) at 1000ms rate
-         if(can_tx_timer4 == 0 && HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 0)
-         {
-             can_tx_timer4 = 1000;
-
-             CAN_tx_header.IDE=CAN_ID_EXT;
-             CAN_tx_header.DLC=8;
-             CAN_tx_header.RTR=CAN_RTR_DATA;
-             // PGN 65523 (0xFFF3) with source address
-             CAN_tx_header.ExtId=0x18FFF300 + CAN_SOURCE_ADDRESS;
-
-             clear_CAN_tx_data();
-
-             // Byte 0-1: Lowered Setpoint (2 bytes, default 50)
-             can_tx_data[0] = (uint8_t)(S35_config[TOUCHGFX_TRUCK_LOWERED] & 0xFF);        // Low byte
-             can_tx_data[1] = (uint8_t)((S35_config[TOUCHGFX_TRUCK_LOWERED] >> 8) & 0xFF); // High byte
-
-             // Byte 2-3: Raised Setpoint (2 bytes, default 280)
-             can_tx_data[2] = (uint8_t)(S35_config[TOUCHGFX_TRUCK_RAISED] & 0xFF);        // Low byte
-             can_tx_data[3] = (uint8_t)((S35_config[TOUCHGFX_TRUCK_RAISED] >> 8) & 0xFF); // High byte
-
-             // Byte 4-5: Overload Setpoint (2 bytes, default 380)
-             can_tx_data[4] = (uint8_t)(S35_config[TOUCHGFX_TRUCK_OVERLOAD] & 0xFF);        // Low byte
-             can_tx_data[5] = (uint8_t)((S35_config[TOUCHGFX_TRUCK_OVERLOAD] >> 8) & 0xFF); // High byte
-
-             // Byte 6-7: Emergency Setpoint (2 bytes, default 395)
-             can_tx_data[6] = (uint8_t)(S35_config[TOUCHGFX_TRUCK_EMERGENCY] & 0xFF);        // Low byte
-             can_tx_data[7] = (uint8_t)((S35_config[TOUCHGFX_TRUCK_EMERGENCY] >> 8) & 0xFF); // High byte
-
-             if (HAL_CAN_AddTxMessage(&hcan1, &CAN_tx_header, can_tx_data, &CAN_tx_mailbox) != HAL_OK)
-             {
-                 //Error_Handler ();
-             }
-             else
-             {
-                 ++can_tx_count;
-             }
-         }
-         // NEW: Trailer Pressure Settings transmission - PGN 65524 (0xFFF4) at 1000ms rate
-         if(can_tx_timer5 == 0 && HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 0)
-         {
-             can_tx_timer5 = 1000;
-
-             CAN_tx_header.IDE=CAN_ID_EXT;
-             CAN_tx_header.DLC=8;
-             CAN_tx_header.RTR=CAN_RTR_DATA;
-             // PGN 65524 (0xFFF4) with source address
-             CAN_tx_header.ExtId=0x18FFF400 + CAN_SOURCE_ADDRESS;
-
-             clear_CAN_tx_data();
-
-             // Byte 0-1: Trailer Lowered Setpoint (2 bytes, default 50)
-             can_tx_data[0] = (uint8_t)(S35_config[TOUCHGFX_TRAILER_LOWERED] & 0xFF);        // Low byte
-             can_tx_data[1] = (uint8_t)((S35_config[TOUCHGFX_TRAILER_LOWERED] >> 8) & 0xFF); // High byte
-
-             // Byte 2-3: Trailer Raised Setpoint (2 bytes, default 280)
-             can_tx_data[2] = (uint8_t)(S35_config[TOUCHGFX_TRAILER_RAISED] & 0xFF);        // Low byte
-             can_tx_data[3] = (uint8_t)((S35_config[TOUCHGFX_TRAILER_RAISED] >> 8) & 0xFF); // High byte
-
-             // Byte 4-5: Trailer Overload Setpoint (2 bytes, default 380)
-             can_tx_data[4] = (uint8_t)(S35_config[TOUCHGFX_TRAILER_OVERLOAD] & 0xFF);        // Low byte
-             can_tx_data[5] = (uint8_t)((S35_config[TOUCHGFX_TRAILER_OVERLOAD] >> 8) & 0xFF); // High byte
-
-             // Byte 6-7: Trailer Emergency Setpoint (2 bytes, default 395)
-             can_tx_data[6] = (uint8_t)(S35_config[TOUCHGFX_TRAILER_EMERGENCY] & 0xFF);        // Low byte
-             can_tx_data[7] = (uint8_t)((S35_config[TOUCHGFX_TRAILER_EMERGENCY] >> 8) & 0xFF); // High byte
-
-             if (HAL_CAN_AddTxMessage(&hcan1, &CAN_tx_header, can_tx_data, &CAN_tx_mailbox) != HAL_OK)
-             {
-                 //Error_Handler ();
-             }
-             else
-             {
-                 ++can_tx_count;
-             }
-         }
-         if(can_tx_timer6 == 0 && HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 0)
-         {
-             can_tx_timer6 = 100;
-
-             CAN_tx_header.IDE=CAN_ID_EXT;
-             CAN_tx_header.DLC=8;
-             CAN_tx_header.RTR=CAN_RTR_DATA;
-             // PGN 66522 (0x1040A) with source address
-             CAN_tx_header.ExtId=0x18FFF500 + CAN_SOURCE_ADDRESS;
-
-             clear_CAN_tx_data();
-
-             can_tx_data[0] = S35_config[TOUCHGFX_ANGLE];   // Byte 1: Trailer raise command
-             can_tx_data[1] =  S35_config[TOUCHGFX_INCLO_BUBBLE];   // Byte 2: Trailer lower command
-             can_tx_data[2] = S35_config[TOUCHGFX_PRESSURE_BUBBLE];   // Byte 3: Trailer latch command
-             //can_tx_data[3] = TrailerTraystate;   // Byte 4: Trailer state
-
-             if (HAL_CAN_AddTxMessage(&hcan1, &CAN_tx_header, can_tx_data, &CAN_tx_mailbox) != HAL_OK)
-             {
-                 //Error_Handler ();
-             }
-             else
-             {
-                 ++can_tx_count;
-             }
-         }
 
 }
 
@@ -407,59 +228,19 @@ void CAN_receive_coms()
 				//SPN 92: Engine load
 				j1939EngineLoad = can_rx_data[2];
 				break;
-			case 0xF013:
-				//SPN 3318: Pitch Angle
-	            uint16_t newRoll = make16(can_rx_data[3], can_rx_data[2]);
-	            newRoll *= 0.002;
-
-	            // Only update if significant change (reduce noise)
-	            if (abs((int16_t)newRoll - (int16_t)j1939Roll) > 1)
-	            {
-	                j1939Roll = newRoll;
-	                can_data_updated = 1;
-	            }
-				break;
 			case 0xFF16:
 				//PTO Status
 				//Byte 1 Parameters
-				j1939PTOStatus = (can_rx_data[0] & 0x01) ? 1 : 0;
-				j1939EStopStatus = (can_rx_data[0] & 0x02) ? 1 : 0;
-				j1939TruckProximity = (can_rx_data[0] & 0x04) ? 1 : 0;
-				j1939TrailerProximity = (can_rx_data[0] & 0x08) ? 1 : 0;
+				//j1939PTOStatus = (can_rx_data[0] & 0x01) ? 1 : 0;
+				//j1939EStopStatus = (can_rx_data[0] & 0x02) ? 1 : 0;
+				//j1939TruckProximity = (can_rx_data[0] & 0x04) ? 1 : 0;
+				//j1939TrailerProximity = (can_rx_data[0] & 0x08) ? 1 : 0;
 				//j1939EStopStatus = (can_rx_data[0] & 0x10) ? 1 : 0;
 				//j1939EStopStatus = (can_rx_data[0] & 0x20) ? 1 : 0;
 				//j1939EStopStatus = (can_rx_data[0] & 0x40) ? 1 : 0;
 				//j1939EStopStatus = (can_rx_data[0] & 0x80) ? 1 : 0;
-				j1939Truck_Press = make16(can_rx_data[2], can_rx_data[1]);
-				j1939Trailer_Press = make16(can_rx_data[4], can_rx_data[3]);
-
-				break;
-				//Byte 3 bit 6 example
-			case 0xFF17: //Error Messages from MC2
-				//Byte 1 Parameters
-				j1939Truck_Latched = (can_rx_data[0] & 0x01) ? 1 : 0;
-				j1939Truck_Lowered = (can_rx_data[0] & 0x02) ? 1 : 0;
-				j1939Truck_Moving = (can_rx_data[0] & 0x04) ? 1 : 0;
-				j1939Truck_Raised = (can_rx_data[0] & 0x08) ? 1 : 0;
-				//j1939PTO_Disabled = (can_rx_data[0] & 0x10) ? 1 : 0;
-				//j1939EStop_Active = (can_rx_data[0] & 0x20) ? 1 : 0;
-				//j1939Angle_Exceeded = (can_rx_data[0] & 0x40) ? 1 : 0;
-				//j1939EStopStatus = (can_rx_data[0] & 0x80) ? 1 : 0;
-				break;
-			case 0xFF18: //Error Messages from MC2
-				j1939PTO_Disabled = (can_rx_data[0] & 0x01) ? 1 : 0;
-				j1939EStop_Active = (can_rx_data[0] & 0x02) ? 1 : 0;
-				j1939Angle_Exceeded = (can_rx_data[0] & 0x04) ? 1 : 0;
-				j1939Overpressure = (can_rx_data[0] & 0x08) ? 1 : 0;
-				break;
-			case 0xFF19: // Trailer Status Messages (similar to truck 0xFF17)
-			    // Byte 1 Parameters - Only position states, no error states
-			    j1939Trailer_Latched = (can_rx_data[0] & 0x01) ? 1 : 0;
-			    j1939Trailer_Lowered = (can_rx_data[0] & 0x02) ? 1 : 0;
-			    j1939Trailer_Moving = (can_rx_data[0] & 0x04) ? 1 : 0;
-			    j1939Trailer_Raised = (can_rx_data[0] & 0x08) ? 1 : 0;
-			    // Bytes 2-3: Trailer pressure (if needed)
-			    //j1939Trailer_Press = make16(can_rx_data[2], can_rx_data[1]);
+				//j1939Truck_Press = make16(can_rx_data[2], can_rx_data[1]);
+				//j1939Trailer_Press = make16(can_rx_data[4], can_rx_data[3]);
 		}
 
 		//Update FIFO out pointer
@@ -477,21 +258,6 @@ void CAN_receive_coms()
 		j1939EngineOilPressure = 0xFFFF;
 		j1939EngineCoolantTemp = 0xFFFF;
 		j1939EngineLoad = 0xFFFF;
-		j1939Pitch = 0xFFFF;
-		j1939Roll = 0xFFFF;
-		j1939PTOStatus = 0xFFFF;
-		j1939EStopStatus = 0xFFFF;
-		//j1939Truck_Latched = 0xFFFF;
-		//j1939Truck_Lowered = 0xFFFF;
-		//j1939Truck_Moving = 0xFFFF;
-		//j1939Truck_Raised = 0xFFFF;
-		j1939PTO_Disabled = 0xFFFF;
-		j1939EStop_Active = 0xFFFF;
-		j1939Angle_Exceeded = 0xFFFF;
-		j1939Truck_Press = 0xFFFF;
-		j1939TruckProximity = 0xFFFF;
-		j1939Trailer_Press = 0xFFFF;
-		j1939TrailerProximity = 0xFFFF;
 	}
 }
 

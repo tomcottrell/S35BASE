@@ -79,62 +79,8 @@
       <Text Id="__SingleUse_X5EC" Alignment="Center" TypographyId="Gemunu_20">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_QS83" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">OPEN</Translation>
-      </Text>
-      <Text Id="__SingleUse_BQWI" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_D8BX" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_TJ3D" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_J2RQ" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Trailer</Translation>
-      </Text>
-      <Text Id="__SingleUse_CTSB" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Truck</Translation>
-      </Text>
       <Text Id="__SingleUse_IYKH" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB"></Translation>
-      </Text>
-      <Text Id="__SingleUse_KRNC" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">ACTIVE</Translation>
-      </Text>
-      <Text Id="__SingleUse_L3ZN" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_RNFU" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">CLOSED</Translation>
-      </Text>
-      <Text Id="__SingleUse_22VR" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_QUFX" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_EGUK" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_KFHC" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">45</Translation>
-      </Text>
-      <Text Id="__SingleUse_W1ZF" Alignment="Center" TypographyId="Gemunu_20">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_DD70" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">EStop</Translation>
-      </Text>
-      <Text Id="__SingleUse_5YCL" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Latch</Translation>
-      </Text>
-      <Text Id="__SingleUse_ENWZ" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Hyd Press</Translation>
-      </Text>
-      <Text Id="__SingleUse_SDL8" Alignment="Left" TypographyId="Gemunu_20">
-        <Translation Language="GB">Angle</Translation>
       </Text>
       <Text Id="__SingleUse_UB6I" Alignment="Left" TypographyId="Gemunu_20">
         <Translation Language="GB">MENU</Translation>
